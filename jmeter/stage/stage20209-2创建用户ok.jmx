@@ -1,0 +1,2846 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jmeterTestPlan version="1.2" properties="5.0" jmeter="5.2">
+  <hashTree>
+    <TestPlan guiclass="TestPlanGui" testclass="TestPlan" testname="Test Plan" enabled="true">
+      <stringProp name="TestPlan.comments"></stringProp>
+      <boolProp name="TestPlan.functional_mode">false</boolProp>
+      <boolProp name="TestPlan.tearDown_on_shutdown">true</boolProp>
+      <boolProp name="TestPlan.serialize_threadgroups">false</boolProp>
+      <elementProp name="TestPlan.user_defined_variables" elementType="Arguments" guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+        <collectionProp name="Arguments.arguments"/>
+      </elementProp>
+      <stringProp name="TestPlan.user_define_classpath"></stringProp>
+    </TestPlan>
+    <hashTree>
+      <Arguments guiclass="ArgumentsPanel" testclass="Arguments" testname="全局变量A -【测试变量】-【测试环境2】" enabled="true">
+        <collectionProp name="Arguments.arguments"/>
+      </Arguments>
+      <hashTree/>
+      <Arguments guiclass="ArgumentsPanel" testclass="Arguments" testname="全局变量A -【测试变量】-【测试环境1】" enabled="true">
+        <collectionProp name="Arguments.arguments">
+          <elementProp name="h_type" elementType="Argument">
+            <stringProp name="Argument.name">h_type</stringProp>
+            <stringProp name="Argument.value">http</stringProp>
+            <stringProp name="Argument.desc">http\https</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="ip" elementType="Argument">
+            <stringProp name="Argument.name">ip</stringProp>
+            <stringProp name="Argument.value">10.10.37.3</stringProp>
+            <stringProp name="Argument.desc">测试网站ip或者域名</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="port" elementType="Argument">
+            <stringProp name="Argument.name">port</stringProp>
+            <stringProp name="Argument.value">9001</stringProp>
+            <stringProp name="Argument.desc">网页服务端口</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="adminname" elementType="Argument">
+            <stringProp name="Argument.name">adminname</stringProp>
+            <stringProp name="Argument.value">xadmin</stringProp>
+            <stringProp name="Argument.desc">有管理员权限的账号</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="adminpwd" elementType="Argument">
+            <stringProp name="Argument.name">adminpwd</stringProp>
+            <stringProp name="Argument.value">QmV5b25kIzEx</stringProp>
+            <stringProp name="Argument.desc">有管理员权限的账号的密码（adminname的密码）:Beyond#11</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="pwdBeyond#11" elementType="Argument">
+            <stringProp name="Argument.name">pwdBeyond#11</stringProp>
+            <stringProp name="Argument.value">QmV5b25kIzEx</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="pwdBeyond#12" elementType="Argument">
+            <stringProp name="Argument.name">pwdBeyond#12</stringProp>
+            <stringProp name="Argument.value">QmV5b25kIzEy</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="pwd123456" elementType="Argument">
+            <stringProp name="Argument.name">pwd123456</stringProp>
+            <stringProp name="Argument.value">MTIzNDU2</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="-------" elementType="Argument">
+            <stringProp name="Argument.name">-------</stringProp>
+            <stringProp name="Argument.value">-----</stringProp>
+            <stringProp name="Argument.desc">-------------</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="allroleid" elementType="Argument">
+            <stringProp name="Argument.name">allroleid</stringProp>
+            <stringProp name="Argument.value">[1031979,1032002,1032005,1032020,1032021,1032003,1032006,1032022,1032007,1032023,1032024,1032025,1032008,1032026,1032027,1032028,1032029,1032030,1032009,1032031,1032032,1032033,1032034,1032035,1032036,1032010,1032037,1032038,1032039,1032040,1032041,1032011,1032042,1032012,1032043,1032044,1032045,1032046,1032004,1032013,1032047,1032048,1032014,1032049,1032050,1032051,1032052,1032053,1032054,1032055,1032056,1032057,1032015,1032058,1032059,1032060,1032061,1032062,1032016,1032063,1032064,1032065,1032066,1032017,1032067,1032068,1032069,1032070,1032071,1032072,1032073,1032074,1032075,1032018,1032076,1032077,1032078,1032079,1032080,1032081,1032082,1032083,1032084,1032085,1032086,1032087,1032019,1032088,1031980,1031983,1031984,1031998,1031944,1031945,1031949,1031950,1031951,1031952,1031953,1031954,1031955,1031956,1031946,1031957,1031958,1031959,1031960,1031961,1032001,1031947,1031962,1031963,1031964,1031965,1031966,1031967,1031968,1031969,1031970,1031971,1031948,1031972,1031973,1031975,1031976,1031977,1031978,1031999,1032000]</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="------" elementType="Argument">
+            <stringProp name="Argument.name">------</stringProp>
+            <stringProp name="Argument.value"></stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="testusername" elementType="Argument">
+            <stringProp name="Argument.name">testusername</stringProp>
+            <stringProp name="Argument.value">jmeteruser01</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="testpassword" elementType="Argument">
+            <stringProp name="Argument.name">testpassword</stringProp>
+            <stringProp name="Argument.value">${pwdBeyond#11}</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+        </collectionProp>
+      </Arguments>
+      <hashTree/>
+      <Arguments guiclass="ArgumentsPanel" testclass="Arguments" testname="全局变量B -【运行参数】" enabled="true">
+        <collectionProp name="Arguments.arguments">
+          <elementProp name="No" elementType="Argument">
+            <stringProp name="Argument.name">No</stringProp>
+            <stringProp name="Argument.value">1</stringProp>
+            <stringProp name="Argument.desc">编号从1开始</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+        </collectionProp>
+      </Arguments>
+      <hashTree/>
+      <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+        <collectionProp name="HeaderManager.headers">
+          <elementProp name="" elementType="Header">
+            <stringProp name="Header.name">User-Agent</stringProp>
+            <stringProp name="Header.value">Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36</stringProp>
+          </elementProp>
+          <elementProp name="Content-Type" elementType="Header">
+            <stringProp name="Header.name">Content-Type</stringProp>
+            <stringProp name="Header.value">application/json;charset=UTF-8</stringProp>
+          </elementProp>
+          <elementProp name="systemId" elementType="Header">
+            <stringProp name="Header.name">systemId</stringProp>
+            <stringProp name="Header.value">3</stringProp>
+          </elementProp>
+          <elementProp name="Accept-Encoding" elementType="Header">
+            <stringProp name="Header.name">Accept-Encoding</stringProp>
+            <stringProp name="Header.value">gzip, deflate</stringProp>
+          </elementProp>
+          <elementProp name="Accept-Language" elementType="Header">
+            <stringProp name="Header.name">Accept-Language</stringProp>
+            <stringProp name="Header.value">zh-CN,zh;q=0.9,en;q=0.8</stringProp>
+          </elementProp>
+          <elementProp name="BsmAjaxHeader" elementType="Header">
+            <stringProp name="Header.name">BsmAjaxHeader</stringProp>
+            <stringProp name="Header.value">true</stringProp>
+          </elementProp>
+          <elementProp name="Connection" elementType="Header">
+            <stringProp name="Header.name">Connection</stringProp>
+            <stringProp name="Header.value">keep-alive</stringProp>
+          </elementProp>
+        </collectionProp>
+      </HeaderManager>
+      <hashTree/>
+      <CookieManager guiclass="CookiePanel" testclass="CookieManager" testname="HTTP Cookie Manager" enabled="true">
+        <collectionProp name="CookieManager.cookies"/>
+        <boolProp name="CookieManager.clearEachIteration">false</boolProp>
+        <boolProp name="CookieManager.controlledByThreadGroup">false</boolProp>
+      </CookieManager>
+      <hashTree/>
+      <CacheManager guiclass="CacheManagerGui" testclass="CacheManager" testname="HTTP Cache Manager" enabled="true">
+        <boolProp name="clearEachIteration">false</boolProp>
+        <boolProp name="useExpires">true</boolProp>
+        <boolProp name="CacheManager.controlledByThread">false</boolProp>
+      </CacheManager>
+      <hashTree/>
+      <JDBCDataSource guiclass="TestBeanGUI" testclass="JDBCDataSource" testname="JDBC Connection Configuration【数据库连接】" enabled="false">
+        <boolProp name="autocommit">true</boolProp>
+        <stringProp name="checkQuery"></stringProp>
+        <stringProp name="connectionAge">5000</stringProp>
+        <stringProp name="dataSource"></stringProp>
+        <stringProp name="dbUrl"></stringProp>
+        <stringProp name="driver"></stringProp>
+        <stringProp name="initQuery"></stringProp>
+        <boolProp name="keepAlive">true</boolProp>
+        <stringProp name="password"></stringProp>
+        <stringProp name="poolMax">0</stringProp>
+        <boolProp name="preinit">false</boolProp>
+        <stringProp name="timeout">10000</stringProp>
+        <stringProp name="transactionIsolation">DEFAULT</stringProp>
+        <stringProp name="trimInterval">60000</stringProp>
+        <stringProp name="username"></stringProp>
+      </JDBCDataSource>
+      <hashTree/>
+      <ConfigTestElement guiclass="HttpDefaultsGui" testclass="ConfigTestElement" testname="HTTP Request Defaults【请求默认值】" enabled="true">
+        <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+          <collectionProp name="Arguments.arguments"/>
+        </elementProp>
+        <stringProp name="HTTPSampler.domain">${ip}</stringProp>
+        <stringProp name="HTTPSampler.port">${port}</stringProp>
+        <stringProp name="HTTPSampler.protocol">${h_type}</stringProp>
+        <stringProp name="HTTPSampler.contentEncoding">utf-8</stringProp>
+        <stringProp name="HTTPSampler.path">/</stringProp>
+        <stringProp name="HTTPSampler.concurrentPool">6</stringProp>
+        <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+        <stringProp name="HTTPSampler.response_timeout"></stringProp>
+      </ConfigTestElement>
+      <hashTree/>
+      <TestFragmentController guiclass="TestFragmentControllerGui" testclass="TestFragmentController" testname="【当前-通用模块库】Test Fragment" enabled="true"/>
+      <hashTree>
+        <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="---登录相关---" enabled="true"/>
+        <hashTree>
+          <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="##登录接口##" enabled="true"/>
+          <hashTree>
+            <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="【登录】通用：正确入参，检查接口返回成功-输出{out_token} {out_uid}{out_email}{out_phone}" enabled="true">
+              <boolProp name="TransactionController.includeTimers">false</boolProp>
+              <boolProp name="TransactionController.parent">true</boolProp>
+            </TransactionController>
+            <hashTree>
+              <UserParameters guiclass="UserParametersGui" testclass="UserParameters" testname="用户参数" enabled="true">
+                <collectionProp name="UserParameters.names">
+                  <stringProp name="-1110478379">sourcetype</stringProp>
+                  <stringProp name="1216985755">password</stringProp>
+                  <stringProp name="-265713450">username</stringProp>
+                  <stringProp name="499232357">userfullname</stringProp>
+                </collectionProp>
+                <collectionProp name="UserParameters.thread_values">
+                  <collectionProp name="-306060931">
+                    <stringProp name="48">0</stringProp>
+                    <stringProp name="404756043">${password}</stringProp>
+                    <stringProp name="1685720944">${username}</stringProp>
+                    <stringProp name="-1025577151">${userfullname}</stringProp>
+                  </collectionProp>
+                </collectionProp>
+                <boolProp name="UserParameters.per_iteration">true</boolProp>
+                <stringProp name="TestPlan.comments">${__CSVRead(${__V(file_url)},0)}</stringProp>
+              </UserParameters>
+              <hashTree/>
+              <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="post" enabled="true">
+                <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+                <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+                  <collectionProp name="Arguments.arguments">
+                    <elementProp name="" elementType="HTTPArgument">
+                      <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                      <stringProp name="Argument.value">{&quot;sourceType&quot;:&quot;${sourcetype}&quot;,&quot;userName&quot;:&quot;${username}&quot;,&quot;password&quot;:&quot;${password}&quot;}</stringProp>
+                      <stringProp name="Argument.metadata">=</stringProp>
+                    </elementProp>
+                  </collectionProp>
+                </elementProp>
+                <stringProp name="HTTPSampler.domain"></stringProp>
+                <stringProp name="HTTPSampler.port"></stringProp>
+                <stringProp name="HTTPSampler.protocol"></stringProp>
+                <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+                <stringProp name="HTTPSampler.path">/paas-web/upmsapi/login</stringProp>
+                <stringProp name="HTTPSampler.method">POST</stringProp>
+                <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+                <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+                <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+                <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+                <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+                <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+                <stringProp name="HTTPSampler.response_timeout"></stringProp>
+              </HTTPSamplerProxy>
+              <hashTree>
+                <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+                  <collectionProp name="HeaderManager.headers">
+                    <elementProp name="" elementType="Header">
+                      <stringProp name="Header.name">Content-Type</stringProp>
+                      <stringProp name="Header.value">application/json;charset=UTF-8</stringProp>
+                    </elementProp>
+                  </collectionProp>
+                </HeaderManager>
+                <hashTree/>
+                <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+                  <collectionProp name="Asserion.test_strings">
+                    <stringProp name="1918901695">&quot;state&quot;:&quot;success&quot;,&quot;code&quot;:200,&quot;data&quot;:{&quot;name&quot;:</stringProp>
+                    <stringProp name="613748663">&quot;login&quot;:&quot;${username}&quot;,</stringProp>
+                  </collectionProp>
+                  <stringProp name="Assertion.custom_message"></stringProp>
+                  <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+                  <boolProp name="Assertion.assume_success">false</boolProp>
+                  <intProp name="Assertion.test_type">2</intProp>
+                </ResponseAssertion>
+                <hashTree/>
+                <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="返回token - Regular Expression Extractor" enabled="true">
+                  <stringProp name="RegexExtractor.useHeaders">false</stringProp>
+                  <stringProp name="RegexExtractor.refname">out_token</stringProp>
+                  <stringProp name="RegexExtractor.regex">&quot;token&quot;:&quot;(.*?)&quot;</stringProp>
+                  <stringProp name="RegexExtractor.template">$1$</stringProp>
+                  <stringProp name="RegexExtractor.default"></stringProp>
+                  <stringProp name="RegexExtractor.match_number">1</stringProp>
+                  <boolProp name="RegexExtractor.default_empty_value">true</boolProp>
+                </RegexExtractor>
+                <hashTree/>
+                <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="返回用户id Regular Expression Extractor" enabled="true">
+                  <stringProp name="RegexExtractor.useHeaders">false</stringProp>
+                  <stringProp name="RegexExtractor.refname">out_uid</stringProp>
+                  <stringProp name="RegexExtractor.regex">&quot;id&quot;:(.*?),</stringProp>
+                  <stringProp name="RegexExtractor.template">$1$</stringProp>
+                  <stringProp name="RegexExtractor.default"></stringProp>
+                  <stringProp name="RegexExtractor.match_number">1</stringProp>
+                  <boolProp name="RegexExtractor.default_empty_value">true</boolProp>
+                </RegexExtractor>
+                <hashTree/>
+                <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="返回 {out_email}" enabled="true">
+                  <stringProp name="RegexExtractor.useHeaders">false</stringProp>
+                  <stringProp name="RegexExtractor.refname">out_email</stringProp>
+                  <stringProp name="RegexExtractor.regex">&quot;email&quot;:&quot;(.*?)&quot;,</stringProp>
+                  <stringProp name="RegexExtractor.template">$1$</stringProp>
+                  <stringProp name="RegexExtractor.default"></stringProp>
+                  <stringProp name="RegexExtractor.match_number">1</stringProp>
+                  <boolProp name="RegexExtractor.default_empty_value">true</boolProp>
+                </RegexExtractor>
+                <hashTree/>
+                <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="返回 {out_phone}" enabled="true">
+                  <stringProp name="RegexExtractor.useHeaders">false</stringProp>
+                  <stringProp name="RegexExtractor.refname">out_phone</stringProp>
+                  <stringProp name="RegexExtractor.regex">&quot;phone&quot;:&quot;(.*?)&quot;,</stringProp>
+                  <stringProp name="RegexExtractor.template">$1$</stringProp>
+                  <stringProp name="RegexExtractor.default"></stringProp>
+                  <stringProp name="RegexExtractor.match_number">1</stringProp>
+                  <boolProp name="RegexExtractor.default_empty_value">true</boolProp>
+                </RegexExtractor>
+                <hashTree/>
+              </hashTree>
+            </hashTree>
+            <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="【登录】通用：错误入参，检查接口返回符合预期 -Transaction Controller" enabled="true">
+              <boolProp name="TransactionController.includeTimers">false</boolProp>
+              <boolProp name="TransactionController.parent">true</boolProp>
+            </TransactionController>
+            <hashTree/>
+          </hashTree>
+          <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="##登出接口##" enabled="true"/>
+          <hashTree/>
+          <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="##修改密码##" enabled="true"/>
+          <hashTree>
+            <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="【修改密码】通用：正确入参，检查返回 修改成功" enabled="true">
+              <boolProp name="TransactionController.includeTimers">false</boolProp>
+              <boolProp name="TransactionController.parent">true</boolProp>
+            </TransactionController>
+            <hashTree>
+              <UserParameters guiclass="UserParametersGui" testclass="UserParameters" testname="User Parameters" enabled="true">
+                <collectionProp name="UserParameters.names">
+                  <stringProp name="-716917278">oldPassword</stringProp>
+                  <stringProp name="1216985755">password</stringProp>
+                </collectionProp>
+                <collectionProp name="UserParameters.thread_values">
+                  <collectionProp name="-1827383316">
+                    <stringProp name="-1207672494">${oldpassword}</stringProp>
+                    <stringProp name="-1081786887">${newpassword}</stringProp>
+                  </collectionProp>
+                  <collectionProp name="1121250273">
+                    <stringProp name="25828642">旧密码</stringProp>
+                    <stringProp name="25775787">新密码</stringProp>
+                  </collectionProp>
+                </collectionProp>
+                <boolProp name="UserParameters.per_iteration">false</boolProp>
+              </UserParameters>
+              <hashTree/>
+              <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="put" enabled="true">
+                <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+                <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+                  <collectionProp name="Arguments.arguments">
+                    <elementProp name="" elementType="HTTPArgument">
+                      <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                      <stringProp name="Argument.value">{&quot;password&quot;:&quot;${password}&quot;,&quot;oldPassword&quot;:&quot;${oldPassword}&quot;}</stringProp>
+                      <stringProp name="Argument.metadata">=</stringProp>
+                    </elementProp>
+                  </collectionProp>
+                </elementProp>
+                <stringProp name="HTTPSampler.domain"></stringProp>
+                <stringProp name="HTTPSampler.port"></stringProp>
+                <stringProp name="HTTPSampler.protocol"></stringProp>
+                <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+                <stringProp name="HTTPSampler.path">/paas-web/upmsapi/login/password</stringProp>
+                <stringProp name="HTTPSampler.method">PUT</stringProp>
+                <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+                <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+                <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+                <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+                <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+                <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+                <stringProp name="HTTPSampler.response_timeout"></stringProp>
+              </HTTPSamplerProxy>
+              <hashTree>
+                <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+                  <collectionProp name="HeaderManager.headers">
+                    <elementProp name="" elementType="Header">
+                      <stringProp name="Header.name">Content-Type</stringProp>
+                      <stringProp name="Header.value">application/json;charset=UTF-8</stringProp>
+                    </elementProp>
+                  </collectionProp>
+                </HeaderManager>
+                <hashTree/>
+                <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="false">
+                  <collectionProp name="Asserion.test_strings">
+                    <stringProp name="-1891620793">&quot;state&quot;:&quot;success&quot;,&quot;code&quot;:200,&quot;data&quot;:{&quot;name&quot;:&quot;${adminname}&quot;,</stringProp>
+                  </collectionProp>
+                  <stringProp name="Assertion.custom_message"></stringProp>
+                  <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+                  <boolProp name="Assertion.assume_success">false</boolProp>
+                  <intProp name="Assertion.test_type">2</intProp>
+                </ResponseAssertion>
+                <hashTree/>
+                <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="返回token - Regular Expression Extractor" enabled="false">
+                  <stringProp name="RegexExtractor.useHeaders">false</stringProp>
+                  <stringProp name="RegexExtractor.refname">out_token</stringProp>
+                  <stringProp name="RegexExtractor.regex">&quot;token&quot;:&quot;(.*?)&quot;</stringProp>
+                  <stringProp name="RegexExtractor.template">$1$</stringProp>
+                  <stringProp name="RegexExtractor.default"></stringProp>
+                  <stringProp name="RegexExtractor.match_number">1</stringProp>
+                  <boolProp name="RegexExtractor.default_empty_value">true</boolProp>
+                </RegexExtractor>
+                <hashTree/>
+                <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="返回用户id Regular Expression Extractor" enabled="false">
+                  <stringProp name="RegexExtractor.useHeaders">false</stringProp>
+                  <stringProp name="RegexExtractor.refname">out_uid</stringProp>
+                  <stringProp name="RegexExtractor.regex">&quot;id&quot;:(.*?),</stringProp>
+                  <stringProp name="RegexExtractor.template">$1$</stringProp>
+                  <stringProp name="RegexExtractor.default"></stringProp>
+                  <stringProp name="RegexExtractor.match_number">1</stringProp>
+                  <boolProp name="RegexExtractor.default_empty_value">true</boolProp>
+                </RegexExtractor>
+                <hashTree/>
+                <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="返回 {out_email}" enabled="false">
+                  <stringProp name="RegexExtractor.useHeaders">false</stringProp>
+                  <stringProp name="RegexExtractor.refname">out_email</stringProp>
+                  <stringProp name="RegexExtractor.regex">&quot;email&quot;:&quot;(.*?)&quot;,</stringProp>
+                  <stringProp name="RegexExtractor.template">$1$</stringProp>
+                  <stringProp name="RegexExtractor.default"></stringProp>
+                  <stringProp name="RegexExtractor.match_number">1</stringProp>
+                  <boolProp name="RegexExtractor.default_empty_value">true</boolProp>
+                </RegexExtractor>
+                <hashTree/>
+                <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="返回 {out_phone}" enabled="false">
+                  <stringProp name="RegexExtractor.useHeaders">false</stringProp>
+                  <stringProp name="RegexExtractor.refname">out_phone</stringProp>
+                  <stringProp name="RegexExtractor.regex">&quot;phone&quot;:&quot;(.*?)&quot;,</stringProp>
+                  <stringProp name="RegexExtractor.template">$1$</stringProp>
+                  <stringProp name="RegexExtractor.default"></stringProp>
+                  <stringProp name="RegexExtractor.match_number">1</stringProp>
+                  <boolProp name="RegexExtractor.default_empty_value">true</boolProp>
+                </RegexExtractor>
+                <hashTree/>
+                <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+                  <collectionProp name="Asserion.test_strings">
+                    <stringProp name="-1158798567">{&quot;message&quot;:&quot;密码更新成功&quot;,&quot;exceptionStackTrace&quot;:null,&quot;state&quot;:&quot;success&quot;,&quot;code&quot;:200,&quot;data&quot;:true,&quot;entity&quot;:null}</stringProp>
+                  </collectionProp>
+                  <stringProp name="Assertion.custom_message"></stringProp>
+                  <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+                  <boolProp name="Assertion.assume_success">false</boolProp>
+                  <intProp name="Assertion.test_type">8</intProp>
+                </ResponseAssertion>
+                <hashTree/>
+              </hashTree>
+            </hashTree>
+          </hashTree>
+        </hashTree>
+        <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="---组织，角色--" enabled="true"/>
+        <hashTree/>
+      </hashTree>
+      <TestFragmentController guiclass="TestFragmentControllerGui" testclass="TestFragmentController" testname="【历常用组件/模块参考】Test Fragment" enabled="false"/>
+      <hashTree/>
+      <TestFragmentController guiclass="TestFragmentControllerGui" testclass="TestFragmentController" testname="Test Fragment" enabled="false"/>
+      <hashTree/>
+      <TestFragmentController guiclass="TestFragmentControllerGui" testclass="TestFragmentController" testname="&gt;&gt;&gt;&gt;&gt;&gt;登录模块&lt;&lt;&lt;&lt;&lt;&lt;&lt;" enabled="false"/>
+      <hashTree/>
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="场景：创建新用户并登录（重复增删）" enabled="true">
+        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
+        <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
+          <boolProp name="LoopController.continue_forever">false</boolProp>
+          <stringProp name="LoopController.loops">1</stringProp>
+        </elementProp>
+        <stringProp name="ThreadGroup.num_threads">1</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">1</stringProp>
+        <boolProp name="ThreadGroup.scheduler">false</boolProp>
+        <stringProp name="ThreadGroup.duration"></stringProp>
+        <stringProp name="ThreadGroup.delay"></stringProp>
+        <boolProp name="ThreadGroup.same_user_on_next_iteration">true</boolProp>
+      </ThreadGroup>
+      <hashTree>
+        <BeanShellSampler guiclass="BeanShellSamplerGui" testclass="BeanShellSampler" testname="------------------------Sampler(获取线程组的名称)" enabled="true">
+          <stringProp name="BeanShellSampler.query">
+group =  ctx.getThreadGroup(); // 获取当前线程组
+str = group.getName(); // 获取线程组的名称
+//str = str.substring(0,4); // 截取字符串
+vars.put(&quot;xc&quot;,str);
+
+</stringProp>
+          <stringProp name="BeanShellSampler.filename"></stringProp>
+          <stringProp name="BeanShellSampler.parameters"></stringProp>
+          <boolProp name="BeanShellSampler.resetInterpreter">false</boolProp>
+        </BeanShellSampler>
+        <hashTree/>
+        <DebugSampler guiclass="TestBeanGUI" testclass="DebugSampler" testname="Debug Sampler" enabled="true">
+          <boolProp name="displayJMeterProperties">false</boolProp>
+          <boolProp name="displayJMeterVariables">true</boolProp>
+          <boolProp name="displaySystemProperties">false</boolProp>
+        </DebugSampler>
+        <hashTree/>
+        <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Constant Timer" enabled="true">
+          <stringProp name="ConstantTimer.delay">100</stringProp>
+        </ConstantTimer>
+        <hashTree/>
+        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="[${xc}]-正例${No}:创建组织、角色并创建用户赋权" enabled="true">
+          <boolProp name="TransactionController.includeTimers">false</boolProp>
+          <boolProp name="TransactionController.parent">true</boolProp>
+        </TransactionController>
+        <hashTree>
+          <UserParameters guiclass="UserParametersGui" testclass="UserParameters" testname="用户参数" enabled="true">
+            <collectionProp name="UserParameters.names">
+              <stringProp name="1216985755">password</stringProp>
+              <stringProp name="-265713450">username</stringProp>
+              <stringProp name="96619420">email</stringProp>
+              <stringProp name="106642798">phone</stringProp>
+              <stringProp name="-1204086929">orgname</stringProp>
+              <stringProp name="1321748606">orgfullname</stringProp>
+              <stringProp name="-1204380811">orgdesc</stringProp>
+              <stringProp name="-265826303">rolename</stringProp>
+              <stringProp name="-266120185">roledesc</stringProp>
+              <stringProp name="1440">--</stringProp>
+              <stringProp name="-1204441994">localname</stringProp>
+              <stringProp name="1309038353">localemail</stringProp>
+              <stringProp name="1319061731">localphone</stringProp>
+              <stringProp name="-1718514316">loginname</stringProp>
+            </collectionProp>
+            <collectionProp name="UserParameters.thread_values">
+              <collectionProp name="-1477044590">
+                <stringProp name="1355609528">${adminpwd}</stringProp>
+                <stringProp name="-928272006">${adminname}</stringProp>
+                <stringProp name="-1012991408">xuyinhao@test.com</stringProp>
+                <stringProp name="711731162">13812341234</stringProp>
+                <stringProp name="866126960">jmeter_test_组织</stringProp>
+                <stringProp name="-1374480457">jmeter_test_组织_全称</stringProp>
+                <stringProp name="1295131436">jmeter_test_组织_描述.信息</stringProp>
+                <stringProp name="-1494990382">jmeter_test角色</stringProp>
+                <stringProp name="975269539">jmeter_test all role角色</stringProp>
+                <stringProp name="1440">--</stringProp>
+                <stringProp name="-597812992">jmetertestuser01名称</stringProp>
+                <stringProp name="-657087619">jmetertestuser.01@jmetertestuser01.com</stringProp>
+                <stringProp name="-2107020086">17000000000</stringProp>
+                <stringProp name="-796152643">jmetertestuser01</stringProp>
+              </collectionProp>
+              <collectionProp name="1631480228">
+                <stringProp name="759035">密码</stringProp>
+                <stringProp name="29623262">用户名</stringProp>
+                <stringProp name="774365341">修改用户邮箱</stringProp>
+                <stringProp name="773882564">修改用户号码</stringProp>
+                <stringProp name="32213994">组织名</stringProp>
+                <stringProp name="998644070">组织全程</stringProp>
+                <stringProp name="2065710469">组织描述备注</stringProp>
+                <stringProp name="34962733">角色名</stringProp>
+                <stringProp name="1084006625">角色描述</stringProp>
+                <stringProp name="44685">---</stringProp>
+                <stringProp name="918352338">用户名称</stringProp>
+                <stringProp name="918833938">用户邮箱</stringProp>
+                <stringProp name="918620055">用户电话</stringProp>
+                <stringProp name="29926163">登录名</stringProp>
+              </collectionProp>
+            </collectionProp>
+            <boolProp name="UserParameters.per_iteration">true</boolProp>
+            <stringProp name="TestPlan.comments">${__CSVRead(${__V(file_url)},0)}</stringProp>
+          </UserParameters>
+          <hashTree/>
+          <ModuleController guiclass="ModuleControllerGui" testclass="ModuleController" testname="登录并返回token - Module Controller-" enabled="true">
+            <collectionProp name="ModuleController.node_path">
+              <stringProp name="764597751">Test Plan</stringProp>
+              <stringProp name="764597751">Test Plan</stringProp>
+              <stringProp name="-1955561607">【当前-通用模块库】Test Fragment</stringProp>
+              <stringProp name="744875019">---登录相关---</stringProp>
+              <stringProp name="183365976">##登录接口##</stringProp>
+              <stringProp name="-1859174498">【登录】通用：正确入参，检查接口返回成功-输出{out_token} {out_uid}{out_email}{out_phone}</stringProp>
+            </collectionProp>
+          </ModuleController>
+          <hashTree/>
+          <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="环境准备-删除已经存在的组织 - Simple Controller" enabled="true"/>
+          <hashTree>
+            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+              <collectionProp name="HeaderManager.headers">
+                <elementProp name="" elementType="Header">
+                  <stringProp name="Header.name">token</stringProp>
+                  <stringProp name="Header.value">${out_token}</stringProp>
+                </elementProp>
+              </collectionProp>
+            </HeaderManager>
+            <hashTree/>
+            <ModuleController guiclass="ModuleControllerGui" testclass="ModuleController" testname="登录并返回token - Module Controller-" enabled="false">
+              <collectionProp name="ModuleController.node_path">
+                <stringProp name="764597751">Test Plan</stringProp>
+                <stringProp name="764597751">Test Plan</stringProp>
+                <stringProp name="-1955561607">【当前-通用模块库】Test Fragment</stringProp>
+                <stringProp name="744875019">---登录相关---</stringProp>
+                <stringProp name="183365976">##登录接口##</stringProp>
+                <stringProp name="-1859174498">【登录】通用：正确入参，检查接口返回成功-输出{out_token} {out_uid}{out_email}{out_phone}</stringProp>
+              </collectionProp>
+            </ModuleController>
+            <hashTree/>
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="获取最新组存在 并返回 {grpid}" enabled="true">
+              <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+                <collectionProp name="Arguments.arguments"/>
+              </elementProp>
+              <stringProp name="HTTPSampler.domain"></stringProp>
+              <stringProp name="HTTPSampler.port"></stringProp>
+              <stringProp name="HTTPSampler.protocol"></stringProp>
+              <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+              <stringProp name="HTTPSampler.path">/paas-web/upmsapi/organizations?orgName=&amp;currPageNum=1&amp;pageSize=200</stringProp>
+              <stringProp name="HTTPSampler.method">GET</stringProp>
+              <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+              <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+              <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+              <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+              <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+              <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+              <stringProp name="HTTPSampler.response_timeout"></stringProp>
+            </HTTPSamplerProxy>
+            <hashTree>
+              <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="Regular Expression Extractor" enabled="true">
+                <stringProp name="RegexExtractor.useHeaders">false</stringProp>
+                <stringProp name="RegexExtractor.refname">grpid</stringProp>
+                <stringProp name="RegexExtractor.regex">{&quot;id&quot;:(\w+?),&quot;createTime&quot;:&quot;(.*?)&quot;,&quot;updateTime&quot;:&quot;(.*?)&quot;,&quot;orgName&quot;:&quot;${orgname}&quot;,&quot;fullName&quot;:&quot;${orgfullname}&quot;,&quot;orgDesc&quot;:&quot;${orgdesc}&quot;,</stringProp>
+                <stringProp name="RegexExtractor.template">$1$</stringProp>
+                <stringProp name="RegexExtractor.default"></stringProp>
+                <stringProp name="RegexExtractor.match_number">1</stringProp>
+                <boolProp name="RegexExtractor.default_empty_value">true</boolProp>
+              </RegexExtractor>
+              <hashTree/>
+            </hashTree>
+            <IfController guiclass="IfControllerPanel" testclass="IfController" testname="如果组织存在 则删除组织 If Controller" enabled="true">
+              <stringProp name="IfController.condition">${__jexl3(&quot;${grpid}&quot;!=&quot;&quot;,)}</stringProp>
+              <boolProp name="IfController.evaluateAll">false</boolProp>
+              <boolProp name="IfController.useExpression">true</boolProp>
+            </IfController>
+            <hashTree>
+              <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="删除组织" enabled="true">
+                <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+                <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+                  <collectionProp name="Arguments.arguments">
+                    <elementProp name="" elementType="HTTPArgument">
+                      <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                      <stringProp name="Argument.value">{}</stringProp>
+                      <stringProp name="Argument.metadata">=</stringProp>
+                    </elementProp>
+                  </collectionProp>
+                </elementProp>
+                <stringProp name="HTTPSampler.domain"></stringProp>
+                <stringProp name="HTTPSampler.port"></stringProp>
+                <stringProp name="HTTPSampler.protocol"></stringProp>
+                <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+                <stringProp name="HTTPSampler.path">/paas-web/upmsapi/organizations/${grpid}</stringProp>
+                <stringProp name="HTTPSampler.method">DELETE</stringProp>
+                <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+                <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+                <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+                <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+                <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+                <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+                <stringProp name="HTTPSampler.response_timeout"></stringProp>
+              </HTTPSamplerProxy>
+              <hashTree>
+                <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+                  <collectionProp name="HeaderManager.headers">
+                    <elementProp name="" elementType="Header">
+                      <stringProp name="Header.name">token</stringProp>
+                      <stringProp name="Header.value">${out_token}</stringProp>
+                    </elementProp>
+                  </collectionProp>
+                </HeaderManager>
+                <hashTree/>
+                <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+                  <collectionProp name="Asserion.test_strings">
+                    <stringProp name="214001232">{&quot;message&quot;:&quot;删除组织成功&quot;,&quot;exceptionStackTrace&quot;:null,&quot;state&quot;:&quot;success&quot;,&quot;code&quot;:200,&quot;data&quot;:null,&quot;entity&quot;:null}</stringProp>
+                  </collectionProp>
+                  <stringProp name="Assertion.custom_message"></stringProp>
+                  <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+                  <boolProp name="Assertion.assume_success">false</boolProp>
+                  <intProp name="Assertion.test_type">8</intProp>
+                </ResponseAssertion>
+                <hashTree/>
+              </hashTree>
+            </hashTree>
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="检查组织已经不存在了" enabled="true">
+              <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+                <collectionProp name="Arguments.arguments">
+                  <elementProp name="orgName" elementType="HTTPArgument">
+                    <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                    <stringProp name="Argument.value"></stringProp>
+                    <stringProp name="Argument.metadata">=</stringProp>
+                    <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                    <stringProp name="Argument.name">orgName</stringProp>
+                  </elementProp>
+                  <elementProp name="currPageNum" elementType="HTTPArgument">
+                    <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                    <stringProp name="Argument.value">1</stringProp>
+                    <stringProp name="Argument.metadata">=</stringProp>
+                    <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                    <stringProp name="Argument.name">currPageNum</stringProp>
+                  </elementProp>
+                  <elementProp name="pageSize" elementType="HTTPArgument">
+                    <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                    <stringProp name="Argument.value">200</stringProp>
+                    <stringProp name="Argument.metadata">=</stringProp>
+                    <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                    <stringProp name="Argument.name">pageSize</stringProp>
+                  </elementProp>
+                </collectionProp>
+              </elementProp>
+              <stringProp name="HTTPSampler.domain"></stringProp>
+              <stringProp name="HTTPSampler.port"></stringProp>
+              <stringProp name="HTTPSampler.protocol"></stringProp>
+              <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+              <stringProp name="HTTPSampler.path">/paas-web/upmsapi/organizations</stringProp>
+              <stringProp name="HTTPSampler.method">GET</stringProp>
+              <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+              <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+              <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+              <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+              <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+              <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+              <stringProp name="HTTPSampler.response_timeout"></stringProp>
+            </HTTPSamplerProxy>
+            <hashTree>
+              <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+                <collectionProp name="Asserion.test_strings">
+                  <stringProp name="-1953575142">&quot;orgName&quot;:&quot;${orgname}&quot;,&quot;fullName&quot;:&quot;${orgfullname}&quot;,</stringProp>
+                </collectionProp>
+                <stringProp name="Assertion.custom_message"></stringProp>
+                <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+                <boolProp name="Assertion.assume_success">false</boolProp>
+                <intProp name="Assertion.test_type">6</intProp>
+              </ResponseAssertion>
+              <hashTree/>
+            </hashTree>
+          </hashTree>
+          <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="环境准备-删除已经存在的角色 - Simple Controller" enabled="true"/>
+          <hashTree>
+            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+              <collectionProp name="HeaderManager.headers">
+                <elementProp name="" elementType="Header">
+                  <stringProp name="Header.name">token</stringProp>
+                  <stringProp name="Header.value">${out_token}</stringProp>
+                </elementProp>
+              </collectionProp>
+            </HeaderManager>
+            <hashTree/>
+            <ModuleController guiclass="ModuleControllerGui" testclass="ModuleController" testname="登录并返回token - Module Controller-" enabled="false">
+              <collectionProp name="ModuleController.node_path">
+                <stringProp name="764597751">Test Plan</stringProp>
+                <stringProp name="764597751">Test Plan</stringProp>
+                <stringProp name="-1955561607">【当前-通用模块库】Test Fragment</stringProp>
+                <stringProp name="744875019">---登录相关---</stringProp>
+                <stringProp name="183365976">##登录接口##</stringProp>
+                <stringProp name="-1859174498">【登录】通用：正确入参，检查接口返回成功-输出{out_token} {out_uid}{out_email}{out_phone}</stringProp>
+              </collectionProp>
+            </ModuleController>
+            <hashTree/>
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="获取角色存在,并返回 {roleid}" enabled="true">
+              <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+                <collectionProp name="Arguments.arguments">
+                  <elementProp name="cnName" elementType="HTTPArgument">
+                    <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                    <stringProp name="Argument.value"></stringProp>
+                    <stringProp name="Argument.metadata">=</stringProp>
+                    <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                    <stringProp name="Argument.name">cnName</stringProp>
+                  </elementProp>
+                  <elementProp name="pageNumber" elementType="HTTPArgument">
+                    <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                    <stringProp name="Argument.value">1</stringProp>
+                    <stringProp name="Argument.metadata">=</stringProp>
+                    <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                    <stringProp name="Argument.name">pageNumber</stringProp>
+                  </elementProp>
+                  <elementProp name="pageSize" elementType="HTTPArgument">
+                    <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                    <stringProp name="Argument.value">200</stringProp>
+                    <stringProp name="Argument.metadata">=</stringProp>
+                    <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                    <stringProp name="Argument.name">pageSize</stringProp>
+                  </elementProp>
+                </collectionProp>
+              </elementProp>
+              <stringProp name="HTTPSampler.domain"></stringProp>
+              <stringProp name="HTTPSampler.port"></stringProp>
+              <stringProp name="HTTPSampler.protocol"></stringProp>
+              <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+              <stringProp name="HTTPSampler.path">/paas-web/upmsapi/roles</stringProp>
+              <stringProp name="HTTPSampler.method">GET</stringProp>
+              <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+              <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+              <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+              <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+              <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+              <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+              <stringProp name="HTTPSampler.response_timeout"></stringProp>
+            </HTTPSamplerProxy>
+            <hashTree>
+              <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="Regular Expression Extractor" enabled="true">
+                <stringProp name="RegexExtractor.useHeaders">false</stringProp>
+                <stringProp name="RegexExtractor.refname">roleid</stringProp>
+                <stringProp name="RegexExtractor.regex">{&quot;id&quot;:(\w+?),&quot;cnName&quot;:&quot;${rolename}&quot;,&quot;level&quot;:(.*?),&quot;roleType&quot;:(.*?),&quot;description&quot;:&quot;${roledesc}&quot;</stringProp>
+                <stringProp name="RegexExtractor.template">$1$</stringProp>
+                <stringProp name="RegexExtractor.default"></stringProp>
+                <stringProp name="RegexExtractor.match_number">1</stringProp>
+                <boolProp name="RegexExtractor.default_empty_value">true</boolProp>
+              </RegexExtractor>
+              <hashTree/>
+            </hashTree>
+            <IfController guiclass="IfControllerPanel" testclass="IfController" testname="如果角色存在 则删除角色 If Controller" enabled="true">
+              <stringProp name="IfController.condition">${__jexl3(&quot;${roleid}&quot;!=&quot;&quot;,)}</stringProp>
+              <boolProp name="IfController.evaluateAll">false</boolProp>
+              <boolProp name="IfController.useExpression">true</boolProp>
+            </IfController>
+            <hashTree>
+              <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="删除角色前 check" enabled="true">
+                <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+                  <collectionProp name="Arguments.arguments"/>
+                </elementProp>
+                <stringProp name="HTTPSampler.domain"></stringProp>
+                <stringProp name="HTTPSampler.port"></stringProp>
+                <stringProp name="HTTPSampler.protocol"></stringProp>
+                <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+                <stringProp name="HTTPSampler.path">/paas-web/upmsapi/roles/${roleid}/check</stringProp>
+                <stringProp name="HTTPSampler.method">GET</stringProp>
+                <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+                <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+                <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+                <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+                <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+                <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+                <stringProp name="HTTPSampler.response_timeout"></stringProp>
+              </HTTPSamplerProxy>
+              <hashTree>
+                <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+                  <collectionProp name="Asserion.test_strings">
+                    <stringProp name="49586">200</stringProp>
+                  </collectionProp>
+                  <stringProp name="Assertion.custom_message"></stringProp>
+                  <stringProp name="Assertion.test_field">Assertion.response_code</stringProp>
+                  <boolProp name="Assertion.assume_success">false</boolProp>
+                  <intProp name="Assertion.test_type">8</intProp>
+                </ResponseAssertion>
+                <hashTree/>
+              </hashTree>
+              <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="删除角色" enabled="true">
+                <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+                <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+                  <collectionProp name="Arguments.arguments">
+                    <elementProp name="" elementType="HTTPArgument">
+                      <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                      <stringProp name="Argument.value">[${roleid}]</stringProp>
+                      <stringProp name="Argument.metadata">=</stringProp>
+                    </elementProp>
+                  </collectionProp>
+                </elementProp>
+                <stringProp name="HTTPSampler.domain"></stringProp>
+                <stringProp name="HTTPSampler.port"></stringProp>
+                <stringProp name="HTTPSampler.protocol"></stringProp>
+                <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+                <stringProp name="HTTPSampler.path">/paas-web/upmsapi/roles</stringProp>
+                <stringProp name="HTTPSampler.method">DELETE</stringProp>
+                <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+                <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+                <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+                <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+                <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+                <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+                <stringProp name="HTTPSampler.response_timeout"></stringProp>
+              </HTTPSamplerProxy>
+              <hashTree>
+                <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="false">
+                  <collectionProp name="HeaderManager.headers">
+                    <elementProp name="" elementType="Header">
+                      <stringProp name="Header.name">token</stringProp>
+                      <stringProp name="Header.value">${out_token}</stringProp>
+                    </elementProp>
+                  </collectionProp>
+                </HeaderManager>
+                <hashTree/>
+                <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+                  <collectionProp name="Asserion.test_strings">
+                    <stringProp name="-1627606637">{&quot;message&quot;:null,&quot;exceptionStackTrace&quot;:null,&quot;state&quot;:&quot;success&quot;,&quot;code&quot;:200,&quot;data&quot;:null,&quot;entity&quot;:null}</stringProp>
+                  </collectionProp>
+                  <stringProp name="Assertion.custom_message"></stringProp>
+                  <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+                  <boolProp name="Assertion.assume_success">false</boolProp>
+                  <intProp name="Assertion.test_type">8</intProp>
+                </ResponseAssertion>
+                <hashTree/>
+              </hashTree>
+            </hashTree>
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="检查角色已经不存在了" enabled="true">
+              <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+                <collectionProp name="Arguments.arguments">
+                  <elementProp name="cnName" elementType="HTTPArgument">
+                    <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                    <stringProp name="Argument.value"></stringProp>
+                    <stringProp name="Argument.metadata">=</stringProp>
+                    <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                    <stringProp name="Argument.name">cnName</stringProp>
+                  </elementProp>
+                  <elementProp name="pageNumber" elementType="HTTPArgument">
+                    <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                    <stringProp name="Argument.value">1</stringProp>
+                    <stringProp name="Argument.metadata">=</stringProp>
+                    <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                    <stringProp name="Argument.name">pageNumber</stringProp>
+                  </elementProp>
+                  <elementProp name="pageSize" elementType="HTTPArgument">
+                    <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                    <stringProp name="Argument.value">200</stringProp>
+                    <stringProp name="Argument.metadata">=</stringProp>
+                    <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                    <stringProp name="Argument.name">pageSize</stringProp>
+                  </elementProp>
+                </collectionProp>
+              </elementProp>
+              <stringProp name="HTTPSampler.domain"></stringProp>
+              <stringProp name="HTTPSampler.port"></stringProp>
+              <stringProp name="HTTPSampler.protocol"></stringProp>
+              <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+              <stringProp name="HTTPSampler.path">/paas-web/upmsapi/roles</stringProp>
+              <stringProp name="HTTPSampler.method">GET</stringProp>
+              <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+              <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+              <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+              <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+              <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+              <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+              <stringProp name="HTTPSampler.response_timeout"></stringProp>
+            </HTTPSamplerProxy>
+            <hashTree>
+              <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+                <collectionProp name="Asserion.test_strings">
+                  <stringProp name="-1382020177">&quot;cnName&quot;:&quot;${rolename}&quot;</stringProp>
+                </collectionProp>
+                <stringProp name="Assertion.custom_message"></stringProp>
+                <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+                <boolProp name="Assertion.assume_success">false</boolProp>
+                <intProp name="Assertion.test_type">6</intProp>
+              </ResponseAssertion>
+              <hashTree/>
+            </hashTree>
+          </hashTree>
+          <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="环境准备-删除已经存在的用户 - Simple Controller" enabled="true"/>
+          <hashTree>
+            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+              <collectionProp name="HeaderManager.headers">
+                <elementProp name="" elementType="Header">
+                  <stringProp name="Header.name">token</stringProp>
+                  <stringProp name="Header.value">${out_token}</stringProp>
+                </elementProp>
+              </collectionProp>
+            </HeaderManager>
+            <hashTree/>
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="获取用户存在,并返回 {deluid}" enabled="true">
+              <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+                <collectionProp name="Arguments.arguments">
+                  <elementProp name="name" elementType="HTTPArgument">
+                    <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                    <stringProp name="Argument.value"></stringProp>
+                    <stringProp name="Argument.metadata">=</stringProp>
+                    <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                    <stringProp name="Argument.name">name</stringProp>
+                  </elementProp>
+                  <elementProp name="pageNumber" elementType="HTTPArgument">
+                    <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                    <stringProp name="Argument.value">1</stringProp>
+                    <stringProp name="Argument.metadata">=</stringProp>
+                    <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                    <stringProp name="Argument.name">pageNumber</stringProp>
+                  </elementProp>
+                  <elementProp name="pageSize" elementType="HTTPArgument">
+                    <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                    <stringProp name="Argument.value">200</stringProp>
+                    <stringProp name="Argument.metadata">=</stringProp>
+                    <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                    <stringProp name="Argument.name">pageSize</stringProp>
+                  </elementProp>
+                </collectionProp>
+              </elementProp>
+              <stringProp name="HTTPSampler.domain"></stringProp>
+              <stringProp name="HTTPSampler.port"></stringProp>
+              <stringProp name="HTTPSampler.protocol"></stringProp>
+              <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+              <stringProp name="HTTPSampler.path">paas-web/upmsapi/accounts</stringProp>
+              <stringProp name="HTTPSampler.method">GET</stringProp>
+              <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+              <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+              <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+              <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+              <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+              <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+              <stringProp name="HTTPSampler.response_timeout"></stringProp>
+            </HTTPSamplerProxy>
+            <hashTree>
+              <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="Regular Expression Extractor" enabled="true">
+                <stringProp name="RegexExtractor.useHeaders">false</stringProp>
+                <stringProp name="RegexExtractor.refname">deluid</stringProp>
+                <stringProp name="RegexExtractor.regex">&quot;login&quot;:&quot;${loginname}&quot;,(.*?),&quot;id&quot;:(\w+?),</stringProp>
+                <stringProp name="RegexExtractor.template">$2$</stringProp>
+                <stringProp name="RegexExtractor.default">DELUID_ERR</stringProp>
+                <stringProp name="RegexExtractor.match_number">1</stringProp>
+              </RegexExtractor>
+              <hashTree/>
+            </hashTree>
+            <IfController guiclass="IfControllerPanel" testclass="IfController" testname="如果用户存在 则删除用户 If Controller" enabled="true">
+              <stringProp name="IfController.condition">${__jexl3(&quot;${deluid}&quot;!=&quot;&quot;,)}</stringProp>
+              <boolProp name="IfController.evaluateAll">false</boolProp>
+              <boolProp name="IfController.useExpression">true</boolProp>
+            </IfController>
+            <hashTree>
+              <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+                <collectionProp name="HeaderManager.headers">
+                  <elementProp name="" elementType="Header">
+                    <stringProp name="Header.name">token</stringProp>
+                    <stringProp name="Header.value">${out_token}</stringProp>
+                  </elementProp>
+                </collectionProp>
+              </HeaderManager>
+              <hashTree/>
+              <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="删除用户" enabled="true">
+                <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+                <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+                  <collectionProp name="Arguments.arguments">
+                    <elementProp name="" elementType="HTTPArgument">
+                      <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                      <stringProp name="Argument.value">{}</stringProp>
+                      <stringProp name="Argument.metadata">=</stringProp>
+                    </elementProp>
+                  </collectionProp>
+                </elementProp>
+                <stringProp name="HTTPSampler.domain"></stringProp>
+                <stringProp name="HTTPSampler.port"></stringProp>
+                <stringProp name="HTTPSampler.protocol"></stringProp>
+                <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+                <stringProp name="HTTPSampler.path">/paas-web/upmsapi/accounts/${deluid}</stringProp>
+                <stringProp name="HTTPSampler.method">DELETE</stringProp>
+                <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+                <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+                <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+                <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+                <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+                <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+                <stringProp name="HTTPSampler.response_timeout"></stringProp>
+              </HTTPSamplerProxy>
+              <hashTree>
+                <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+                  <collectionProp name="Asserion.test_strings">
+                    <stringProp name="-141242660">{&quot;message&quot;:&quot;删除用户成功&quot;,&quot;exceptionStackTrace&quot;:null,&quot;state&quot;:&quot;success&quot;,&quot;code&quot;:200,&quot;data&quot;:null,&quot;entity&quot;:null}</stringProp>
+                  </collectionProp>
+                  <stringProp name="Assertion.custom_message"></stringProp>
+                  <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+                  <boolProp name="Assertion.assume_success">false</boolProp>
+                  <intProp name="Assertion.test_type">8</intProp>
+                </ResponseAssertion>
+                <hashTree/>
+              </hashTree>
+              <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="检查用户已经不存在了" enabled="true">
+                <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+                  <collectionProp name="Arguments.arguments">
+                    <elementProp name="name" elementType="HTTPArgument">
+                      <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                      <stringProp name="Argument.value"></stringProp>
+                      <stringProp name="Argument.metadata">=</stringProp>
+                      <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                      <stringProp name="Argument.name">name</stringProp>
+                    </elementProp>
+                    <elementProp name="currPageNum" elementType="HTTPArgument">
+                      <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                      <stringProp name="Argument.value">1</stringProp>
+                      <stringProp name="Argument.metadata">=</stringProp>
+                      <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                      <stringProp name="Argument.name">currPageNum</stringProp>
+                    </elementProp>
+                    <elementProp name="pageSize" elementType="HTTPArgument">
+                      <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                      <stringProp name="Argument.value">1000</stringProp>
+                      <stringProp name="Argument.metadata">=</stringProp>
+                      <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                      <stringProp name="Argument.name">pageSize</stringProp>
+                    </elementProp>
+                  </collectionProp>
+                </elementProp>
+                <stringProp name="HTTPSampler.domain"></stringProp>
+                <stringProp name="HTTPSampler.port"></stringProp>
+                <stringProp name="HTTPSampler.protocol"></stringProp>
+                <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+                <stringProp name="HTTPSampler.path">/paas-web/upmsapi/accounts</stringProp>
+                <stringProp name="HTTPSampler.method">GET</stringProp>
+                <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+                <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+                <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+                <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+                <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+                <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+                <stringProp name="HTTPSampler.response_timeout"></stringProp>
+              </HTTPSamplerProxy>
+              <hashTree>
+                <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+                  <collectionProp name="Asserion.test_strings">
+                    <stringProp name="587483533">&quot;login&quot;:&quot;${loginname}&quot;,</stringProp>
+                  </collectionProp>
+                  <stringProp name="Assertion.custom_message"></stringProp>
+                  <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+                  <boolProp name="Assertion.assume_success">false</boolProp>
+                  <intProp name="Assertion.test_type">6</intProp>
+                </ResponseAssertion>
+                <hashTree/>
+              </hashTree>
+            </hashTree>
+          </hashTree>
+          <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="创建组织 ${grpname}" enabled="true">
+            <boolProp name="TransactionController.includeTimers">false</boolProp>
+            <boolProp name="TransactionController.parent">false</boolProp>
+          </TransactionController>
+          <hashTree>
+            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+              <collectionProp name="HeaderManager.headers">
+                <elementProp name="" elementType="Header">
+                  <stringProp name="Header.name">token</stringProp>
+                  <stringProp name="Header.value">${out_token}</stringProp>
+                </elementProp>
+              </collectionProp>
+            </HeaderManager>
+            <hashTree/>
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="创建组织" enabled="true">
+              <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+              <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+                <collectionProp name="Arguments.arguments">
+                  <elementProp name="" elementType="HTTPArgument">
+                    <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                    <stringProp name="Argument.value">{&quot;orgName&quot;:&quot;${orgname}&quot;,&quot;orgDesc&quot;:&quot;${orgdesc}&quot;,&quot;fullName&quot;:&quot;${orgfullname}&quot;}</stringProp>
+                    <stringProp name="Argument.metadata">=</stringProp>
+                  </elementProp>
+                </collectionProp>
+              </elementProp>
+              <stringProp name="HTTPSampler.domain"></stringProp>
+              <stringProp name="HTTPSampler.port"></stringProp>
+              <stringProp name="HTTPSampler.protocol"></stringProp>
+              <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+              <stringProp name="HTTPSampler.path">/paas-web/upmsapi/organizations</stringProp>
+              <stringProp name="HTTPSampler.method">POST</stringProp>
+              <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+              <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+              <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+              <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+              <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+              <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+              <stringProp name="HTTPSampler.response_timeout"></stringProp>
+            </HTTPSamplerProxy>
+            <hashTree>
+              <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+                <collectionProp name="Asserion.test_strings">
+                  <stringProp name="1317820666">{&quot;message&quot;:&quot;新增组织成功&quot;,&quot;exceptionStackTrace&quot;:null,&quot;state&quot;:&quot;success&quot;,&quot;code&quot;:200,&quot;data&quot;:null,&quot;entity&quot;:null}</stringProp>
+                </collectionProp>
+                <stringProp name="Assertion.custom_message"></stringProp>
+                <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+                <boolProp name="Assertion.assume_success">false</boolProp>
+                <intProp name="Assertion.test_type">8</intProp>
+              </ResponseAssertion>
+              <hashTree/>
+            </hashTree>
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="orgs 服务树刷新接口" enabled="true">
+              <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+                <collectionProp name="Arguments.arguments"/>
+              </elementProp>
+              <stringProp name="HTTPSampler.domain"></stringProp>
+              <stringProp name="HTTPSampler.port"></stringProp>
+              <stringProp name="HTTPSampler.protocol"></stringProp>
+              <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+              <stringProp name="HTTPSampler.path">/paas-web/servicetreeapi/cache/orgs</stringProp>
+              <stringProp name="HTTPSampler.method">GET</stringProp>
+              <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+              <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+              <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+              <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+              <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+              <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+              <stringProp name="HTTPSampler.response_timeout"></stringProp>
+            </HTTPSamplerProxy>
+            <hashTree>
+              <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+                <collectionProp name="Asserion.test_strings">
+                  <stringProp name="-1627606637">{&quot;message&quot;:null,&quot;exceptionStackTrace&quot;:null,&quot;state&quot;:&quot;success&quot;,&quot;code&quot;:200,&quot;data&quot;:null,&quot;entity&quot;:null}</stringProp>
+                </collectionProp>
+                <stringProp name="Assertion.custom_message"></stringProp>
+                <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+                <boolProp name="Assertion.assume_success">false</boolProp>
+                <intProp name="Assertion.test_type">8</intProp>
+              </ResponseAssertion>
+              <hashTree/>
+            </hashTree>
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="获取最新组存在 并返回 {grpid}" enabled="true">
+              <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+                <collectionProp name="Arguments.arguments">
+                  <elementProp name="orgName" elementType="HTTPArgument">
+                    <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                    <stringProp name="Argument.value"></stringProp>
+                    <stringProp name="Argument.metadata">=</stringProp>
+                    <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                    <stringProp name="Argument.name">orgName</stringProp>
+                  </elementProp>
+                  <elementProp name="currPageNum" elementType="HTTPArgument">
+                    <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                    <stringProp name="Argument.value">1</stringProp>
+                    <stringProp name="Argument.metadata">=</stringProp>
+                    <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                    <stringProp name="Argument.name">currPageNum</stringProp>
+                  </elementProp>
+                  <elementProp name="pageSize" elementType="HTTPArgument">
+                    <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                    <stringProp name="Argument.value">100</stringProp>
+                    <stringProp name="Argument.metadata">=</stringProp>
+                    <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                    <stringProp name="Argument.name">pageSize</stringProp>
+                  </elementProp>
+                </collectionProp>
+              </elementProp>
+              <stringProp name="HTTPSampler.domain"></stringProp>
+              <stringProp name="HTTPSampler.port"></stringProp>
+              <stringProp name="HTTPSampler.protocol"></stringProp>
+              <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+              <stringProp name="HTTPSampler.path">/paas-web/upmsapi/organizations</stringProp>
+              <stringProp name="HTTPSampler.method">GET</stringProp>
+              <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+              <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+              <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+              <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+              <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+              <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+              <stringProp name="HTTPSampler.response_timeout"></stringProp>
+            </HTTPSamplerProxy>
+            <hashTree>
+              <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+                <collectionProp name="Asserion.test_strings">
+                  <stringProp name="-578996394">&quot;searchCount&quot;:true,&quot;pages&quot;:1</stringProp>
+                  <stringProp name="-1953575142">&quot;orgName&quot;:&quot;${orgname}&quot;,&quot;fullName&quot;:&quot;${orgfullname}&quot;,</stringProp>
+                  <stringProp name="1737826337">&quot;orgDesc&quot;:&quot;${orgdesc}&quot;,&quot;sourceType&quot;:0</stringProp>
+                </collectionProp>
+                <stringProp name="Assertion.custom_message"></stringProp>
+                <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+                <boolProp name="Assertion.assume_success">false</boolProp>
+                <intProp name="Assertion.test_type">2</intProp>
+              </ResponseAssertion>
+              <hashTree/>
+              <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="Regular Expression Extractor" enabled="true">
+                <stringProp name="RegexExtractor.useHeaders">false</stringProp>
+                <stringProp name="RegexExtractor.refname">ngrpid</stringProp>
+                <stringProp name="RegexExtractor.regex">{&quot;id&quot;:(\w+?),&quot;createTime&quot;:&quot;(.*?)&quot;,&quot;updateTime&quot;:&quot;(.*?)&quot;,&quot;orgName&quot;:&quot;${orgname}&quot;,&quot;fullName&quot;:&quot;${orgfullname}&quot;,&quot;orgDesc&quot;:&quot;${orgdesc}&quot;,</stringProp>
+                <stringProp name="RegexExtractor.template">$1$</stringProp>
+                <stringProp name="RegexExtractor.default">NGRPID_ERR</stringProp>
+                <stringProp name="RegexExtractor.match_number">1</stringProp>
+              </RegexExtractor>
+              <hashTree/>
+            </hashTree>
+          </hashTree>
+          <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="创建角色 ${rolename} all-role - Simple Controller" enabled="true"/>
+          <hashTree>
+            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+              <collectionProp name="HeaderManager.headers">
+                <elementProp name="" elementType="Header">
+                  <stringProp name="Header.name">token</stringProp>
+                  <stringProp name="Header.value">${out_token}</stringProp>
+                </elementProp>
+              </collectionProp>
+            </HeaderManager>
+            <hashTree/>
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="创建 all role 角色  - {roleid}" enabled="true">
+              <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+              <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+                <collectionProp name="Arguments.arguments">
+                  <elementProp name="" elementType="HTTPArgument">
+                    <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                    <stringProp name="Argument.value">{&quot;cnName&quot;:&quot;${rolename}&quot;,&quot;level&quot;:&quot;&quot;,&quot;description&quot;:&quot;${roledesc}&quot;,&quot;resourceIds&quot;:${allroleid}}</stringProp>
+                    <stringProp name="Argument.metadata">=</stringProp>
+                  </elementProp>
+                </collectionProp>
+              </elementProp>
+              <stringProp name="HTTPSampler.domain"></stringProp>
+              <stringProp name="HTTPSampler.port"></stringProp>
+              <stringProp name="HTTPSampler.protocol"></stringProp>
+              <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+              <stringProp name="HTTPSampler.path">/paas-web/upmsapi/roles</stringProp>
+              <stringProp name="HTTPSampler.method">POST</stringProp>
+              <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+              <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+              <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+              <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+              <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+              <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+              <stringProp name="HTTPSampler.response_timeout"></stringProp>
+            </HTTPSamplerProxy>
+            <hashTree>
+              <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+                <collectionProp name="Asserion.test_strings">
+                  <stringProp name="-1174819925">{&quot;message&quot;:null,&quot;exceptionStackTrace&quot;:null,&quot;state&quot;:&quot;success&quot;,&quot;code&quot;:200,&quot;data&quot;:</stringProp>
+                </collectionProp>
+                <stringProp name="Assertion.custom_message"></stringProp>
+                <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+                <boolProp name="Assertion.assume_success">false</boolProp>
+                <intProp name="Assertion.test_type">2</intProp>
+              </ResponseAssertion>
+              <hashTree/>
+              <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="Regular Expression Extractor" enabled="true">
+                <stringProp name="RegexExtractor.useHeaders">false</stringProp>
+                <stringProp name="RegexExtractor.refname">nroleid</stringProp>
+                <stringProp name="RegexExtractor.regex">&quot;data&quot;:(.*?),&quot;entity&quot;:null</stringProp>
+                <stringProp name="RegexExtractor.template">$1$</stringProp>
+                <stringProp name="RegexExtractor.default">NROLEID_ERR</stringProp>
+                <stringProp name="RegexExtractor.match_number">1</stringProp>
+              </RegexExtractor>
+              <hashTree/>
+            </hashTree>
+          </hashTree>
+          <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="创建用户 授权 登录 修改个人信息并验证 - Simple Controller" enabled="true"/>
+          <hashTree>
+            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+              <collectionProp name="HeaderManager.headers">
+                <elementProp name="" elementType="Header">
+                  <stringProp name="Header.name">token</stringProp>
+                  <stringProp name="Header.value">${out_token}</stringProp>
+                </elementProp>
+              </collectionProp>
+            </HeaderManager>
+            <hashTree/>
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="创建用户" enabled="true">
+              <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+              <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+                <collectionProp name="Arguments.arguments">
+                  <elementProp name="" elementType="HTTPArgument">
+                    <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                    <stringProp name="Argument.value">{&quot;name&quot;:&quot;${localname}&quot;,&quot;email&quot;:&quot;${localemail}&quot;,&quot;phone&quot;:&quot;${localphone}&quot;,&quot;orgIds&quot;:[${ngrpid}],&quot;login&quot;:&quot;${loginname}&quot;}</stringProp>
+                    <stringProp name="Argument.metadata">=</stringProp>
+                  </elementProp>
+                </collectionProp>
+              </elementProp>
+              <stringProp name="HTTPSampler.domain"></stringProp>
+              <stringProp name="HTTPSampler.port"></stringProp>
+              <stringProp name="HTTPSampler.protocol"></stringProp>
+              <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+              <stringProp name="HTTPSampler.path">/paas-web/upmsapi/accounts</stringProp>
+              <stringProp name="HTTPSampler.method">POST</stringProp>
+              <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+              <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+              <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+              <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+              <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+              <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+              <stringProp name="HTTPSampler.response_timeout"></stringProp>
+            </HTTPSamplerProxy>
+            <hashTree>
+              <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+                <collectionProp name="Asserion.test_strings">
+                  <stringProp name="-1174819925">{&quot;message&quot;:null,&quot;exceptionStackTrace&quot;:null,&quot;state&quot;:&quot;success&quot;,&quot;code&quot;:200,&quot;data&quot;:</stringProp>
+                </collectionProp>
+                <stringProp name="Assertion.custom_message"></stringProp>
+                <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+                <boolProp name="Assertion.assume_success">false</boolProp>
+                <intProp name="Assertion.test_type">2</intProp>
+              </ResponseAssertion>
+              <hashTree/>
+            </hashTree>
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="获取账户信息by loginname -- {userid}" enabled="true">
+              <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+                <collectionProp name="Arguments.arguments">
+                  <elementProp name="name" elementType="HTTPArgument">
+                    <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                    <stringProp name="Argument.value"></stringProp>
+                    <stringProp name="Argument.metadata">=</stringProp>
+                    <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                    <stringProp name="Argument.name">name</stringProp>
+                  </elementProp>
+                  <elementProp name="currPageNum" elementType="HTTPArgument">
+                    <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                    <stringProp name="Argument.value">1</stringProp>
+                    <stringProp name="Argument.metadata">=</stringProp>
+                    <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                    <stringProp name="Argument.name">currPageNum</stringProp>
+                  </elementProp>
+                  <elementProp name="pageSize" elementType="HTTPArgument">
+                    <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                    <stringProp name="Argument.value">1000</stringProp>
+                    <stringProp name="Argument.metadata">=</stringProp>
+                    <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                    <stringProp name="Argument.name">pageSize</stringProp>
+                  </elementProp>
+                </collectionProp>
+              </elementProp>
+              <stringProp name="HTTPSampler.domain"></stringProp>
+              <stringProp name="HTTPSampler.port"></stringProp>
+              <stringProp name="HTTPSampler.protocol"></stringProp>
+              <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+              <stringProp name="HTTPSampler.path">/paas-web/upmsapi/accounts?</stringProp>
+              <stringProp name="HTTPSampler.method">GET</stringProp>
+              <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+              <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+              <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+              <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+              <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+              <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+              <stringProp name="HTTPSampler.response_timeout"></stringProp>
+            </HTTPSamplerProxy>
+            <hashTree>
+              <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="{userid} Regular Expression Extractor  " enabled="true">
+                <stringProp name="RegexExtractor.useHeaders">false</stringProp>
+                <stringProp name="RegexExtractor.refname">userid</stringProp>
+                <stringProp name="RegexExtractor.regex">&quot;login&quot;:&quot;${loginname}&quot;,(.*?),&quot;id&quot;:(.*?),</stringProp>
+                <stringProp name="RegexExtractor.template">$2$</stringProp>
+                <stringProp name="RegexExtractor.default">USERID_ERR</stringProp>
+                <stringProp name="RegexExtractor.match_number">1</stringProp>
+              </RegexExtractor>
+              <hashTree/>
+            </hashTree>
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="用户赋权-角色" enabled="true">
+              <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+              <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+                <collectionProp name="Arguments.arguments">
+                  <elementProp name="" elementType="HTTPArgument">
+                    <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                    <stringProp name="Argument.value">{&quot;roleIds&quot;:[${nroleid}]}</stringProp>
+                    <stringProp name="Argument.metadata">=</stringProp>
+                  </elementProp>
+                </collectionProp>
+              </elementProp>
+              <stringProp name="HTTPSampler.domain"></stringProp>
+              <stringProp name="HTTPSampler.port"></stringProp>
+              <stringProp name="HTTPSampler.protocol"></stringProp>
+              <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+              <stringProp name="HTTPSampler.path">/paas-web/upmsapi/roles/${userid}</stringProp>
+              <stringProp name="HTTPSampler.method">POST</stringProp>
+              <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+              <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+              <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+              <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+              <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+              <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+              <stringProp name="HTTPSampler.response_timeout"></stringProp>
+            </HTTPSamplerProxy>
+            <hashTree>
+              <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+                <collectionProp name="Asserion.test_strings">
+                  <stringProp name="-1627606637">{&quot;message&quot;:null,&quot;exceptionStackTrace&quot;:null,&quot;state&quot;:&quot;success&quot;,&quot;code&quot;:200,&quot;data&quot;:null,&quot;entity&quot;:null}</stringProp>
+                </collectionProp>
+                <stringProp name="Assertion.custom_message"></stringProp>
+                <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+                <boolProp name="Assertion.assume_success">false</boolProp>
+                <intProp name="Assertion.test_type">8</intProp>
+              </ResponseAssertion>
+              <hashTree/>
+            </hashTree>
+            <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="修改用户信息并验证" enabled="true"/>
+            <hashTree>
+              <UserParameters guiclass="UserParametersGui" testclass="UserParameters" testname="用户参数" enabled="true">
+                <collectionProp name="UserParameters.names">
+                  <stringProp name="-265713450">username</stringProp>
+                  <stringProp name="1216985755">password</stringProp>
+                  <stringProp name="-781561406">oldpassword</stringProp>
+                  <stringProp name="-1885879237">newpassword</stringProp>
+                  <stringProp name="0"></stringProp>
+                </collectionProp>
+                <collectionProp name="UserParameters.thread_values">
+                  <collectionProp name="378378628">
+                    <stringProp name="930956704">${loginname}</stringProp>
+                    <stringProp name="1997441204">${pwd123456}</stringProp>
+                    <stringProp name="404756043">${password}</stringProp>
+                    <stringProp name="-2095111793">${pwdBeyond#11}</stringProp>
+                    <stringProp name="0"></stringProp>
+                  </collectionProp>
+                  <collectionProp name="1073196895">
+                    <stringProp name="-1698128530">新 用户名</stringProp>
+                    <stringProp name="-1534253855">登录的新密码</stringProp>
+                    <stringProp name="0"></stringProp>
+                    <stringProp name="0"></stringProp>
+                    <stringProp name="0"></stringProp>
+                  </collectionProp>
+                </collectionProp>
+                <boolProp name="UserParameters.per_iteration">true</boolProp>
+                <stringProp name="TestPlan.comments">${__CSVRead(${__V(file_url)},0)}</stringProp>
+              </UserParameters>
+              <hashTree/>
+              <ModuleController guiclass="ModuleControllerGui" testclass="ModuleController" testname="Module Controller-登录并返回token" enabled="true">
+                <collectionProp name="ModuleController.node_path">
+                  <stringProp name="764597751">Test Plan</stringProp>
+                  <stringProp name="764597751">Test Plan</stringProp>
+                  <stringProp name="-1955561607">【当前-通用模块库】Test Fragment</stringProp>
+                  <stringProp name="744875019">---登录相关---</stringProp>
+                  <stringProp name="183365976">##登录接口##</stringProp>
+                  <stringProp name="-1859174498">【登录】通用：正确入参，检查接口返回成功-输出{out_token} {out_uid}{out_email}{out_phone}</stringProp>
+                </collectionProp>
+              </ModuleController>
+              <hashTree/>
+              <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="修改密码 - Simple Controller" enabled="true"/>
+              <hashTree>
+                <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+                  <collectionProp name="HeaderManager.headers">
+                    <elementProp name="" elementType="Header">
+                      <stringProp name="Header.name">Content-Type</stringProp>
+                      <stringProp name="Header.value">application/json;charset=UTF-8</stringProp>
+                    </elementProp>
+                    <elementProp name="token" elementType="Header">
+                      <stringProp name="Header.name">token</stringProp>
+                      <stringProp name="Header.value">${out_token}</stringProp>
+                    </elementProp>
+                  </collectionProp>
+                </HeaderManager>
+                <hashTree/>
+                <ModuleController guiclass="ModuleControllerGui" testclass="ModuleController" testname="Module Controller- 修改用户密码" enabled="true">
+                  <collectionProp name="ModuleController.node_path">
+                    <stringProp name="764597751">Test Plan</stringProp>
+                    <stringProp name="764597751">Test Plan</stringProp>
+                    <stringProp name="-1955561607">【当前-通用模块库】Test Fragment</stringProp>
+                    <stringProp name="744875019">---登录相关---</stringProp>
+                    <stringProp name="-1843324794">##修改密码##</stringProp>
+                    <stringProp name="-1625137544">【修改密码】通用：正确入参，检查返回 修改成功</stringProp>
+                  </collectionProp>
+                </ModuleController>
+                <hashTree/>
+              </hashTree>
+              <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="修改邮箱等基本信息 - Simple Controller" enabled="true"/>
+              <hashTree>
+                <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="用新密码登录获取token" enabled="true">
+                  <boolProp name="TransactionController.includeTimers">false</boolProp>
+                  <boolProp name="TransactionController.parent">false</boolProp>
+                </TransactionController>
+                <hashTree>
+                  <UserParameters guiclass="UserParametersGui" testclass="UserParameters" testname="用户参数" enabled="true">
+                    <collectionProp name="UserParameters.names">
+                      <stringProp name="-265713450">username</stringProp>
+                      <stringProp name="1216985755">password</stringProp>
+                    </collectionProp>
+                    <collectionProp name="UserParameters.thread_values">
+                      <collectionProp name="1932108448">
+                        <stringProp name="930956704">${loginname}</stringProp>
+                        <stringProp name="-2095111793">${pwdBeyond#11}</stringProp>
+                      </collectionProp>
+                      <collectionProp name="802529">
+                        <stringProp name="0"></stringProp>
+                        <stringProp name="0"></stringProp>
+                      </collectionProp>
+                    </collectionProp>
+                    <boolProp name="UserParameters.per_iteration">true</boolProp>
+                    <stringProp name="TestPlan.comments">${__CSVRead(${__V(file_url)},0)}</stringProp>
+                  </UserParameters>
+                  <hashTree/>
+                  <ModuleController guiclass="ModuleControllerGui" testclass="ModuleController" testname="Module Controller-登录并返回token" enabled="true">
+                    <collectionProp name="ModuleController.node_path">
+                      <stringProp name="764597751">Test Plan</stringProp>
+                      <stringProp name="764597751">Test Plan</stringProp>
+                      <stringProp name="-1955561607">【当前-通用模块库】Test Fragment</stringProp>
+                      <stringProp name="744875019">---登录相关---</stringProp>
+                      <stringProp name="183365976">##登录接口##</stringProp>
+                      <stringProp name="-1859174498">【登录】通用：正确入参，检查接口返回成功-输出{out_token} {out_uid}{out_email}{out_phone}</stringProp>
+                    </collectionProp>
+                  </ModuleController>
+                  <hashTree/>
+                </hashTree>
+                <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="修改并检查" enabled="true">
+                  <boolProp name="TransactionController.includeTimers">false</boolProp>
+                  <boolProp name="TransactionController.parent">false</boolProp>
+                </TransactionController>
+                <hashTree>
+                  <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+                    <collectionProp name="HeaderManager.headers">
+                      <elementProp name="token" elementType="Header">
+                        <stringProp name="Header.name">token</stringProp>
+                        <stringProp name="Header.value">${out_token}</stringProp>
+                      </elementProp>
+                    </collectionProp>
+                  </HeaderManager>
+                  <hashTree/>
+                  <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="修改用户信息" enabled="true">
+                    <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+                    <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+                      <collectionProp name="Arguments.arguments">
+                        <elementProp name="" elementType="HTTPArgument">
+                          <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                          <stringProp name="Argument.value">{&quot;userId&quot;:${userid},&quot;email&quot;:&quot;${email}&quot;,&quot;phone&quot;:&quot;${phone}&quot;}</stringProp>
+                          <stringProp name="Argument.metadata">=</stringProp>
+                        </elementProp>
+                      </collectionProp>
+                    </elementProp>
+                    <stringProp name="HTTPSampler.domain"></stringProp>
+                    <stringProp name="HTTPSampler.port"></stringProp>
+                    <stringProp name="HTTPSampler.protocol"></stringProp>
+                    <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+                    <stringProp name="HTTPSampler.path">/paas-web/upmsapi/login/info</stringProp>
+                    <stringProp name="HTTPSampler.method">POST</stringProp>
+                    <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+                    <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+                    <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+                    <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+                    <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+                    <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+                    <stringProp name="HTTPSampler.response_timeout"></stringProp>
+                  </HTTPSamplerProxy>
+                  <hashTree>
+                    <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+                      <collectionProp name="Asserion.test_strings">
+                        <stringProp name="-2120983600">&quot;state&quot;:&quot;success&quot;,&quot;code&quot;:200,&quot;data&quot;:null,</stringProp>
+                      </collectionProp>
+                      <stringProp name="Assertion.custom_message"></stringProp>
+                      <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+                      <boolProp name="Assertion.assume_success">false</boolProp>
+                      <intProp name="Assertion.test_type">2</intProp>
+                    </ResponseAssertion>
+                    <hashTree/>
+                  </hashTree>
+                  <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Simple Controller" enabled="true"/>
+                  <hashTree>
+                    <ModuleController guiclass="ModuleControllerGui" testclass="ModuleController" testname="再次登录检查email,phone - Module Controller-" enabled="true">
+                      <collectionProp name="ModuleController.node_path">
+                        <stringProp name="764597751">Test Plan</stringProp>
+                        <stringProp name="764597751">Test Plan</stringProp>
+                        <stringProp name="-1955561607">【当前-通用模块库】Test Fragment</stringProp>
+                        <stringProp name="744875019">---登录相关---</stringProp>
+                        <stringProp name="183365976">##登录接口##</stringProp>
+                        <stringProp name="-1859174498">【登录】通用：正确入参，检查接口返回成功-输出{out_token} {out_uid}{out_email}{out_phone}</stringProp>
+                      </collectionProp>
+                    </ModuleController>
+                    <hashTree/>
+                    <BeanShellAssertion guiclass="BeanShellAssertionGui" testclass="BeanShellAssertion" testname="判断邮箱，电话 值 - BeanShell Assertion" enabled="true">
+                      <stringProp name="BeanShellAssertion.query">if (!vars.get(&quot;out_email&quot;).equals(&quot;${email}&quot;)) {
+	Failure = true;
+	FailureMessage = &quot;src value : &quot; +vars.get(&quot;out_email&quot;)+&quot; dst check: &quot;+&quot;${email}&quot;;
+	return False;
+}
+if (!vars.get(&quot;out_phone&quot;).equals(&quot;${phone}&quot;)) {
+	Failure = true;
+	FailureMessage = vars.get(&quot;out_phone&quot;);
+	return False;
+}
+</stringProp>
+                      <stringProp name="BeanShellAssertion.filename"></stringProp>
+                      <stringProp name="BeanShellAssertion.parameters"></stringProp>
+                      <boolProp name="BeanShellAssertion.resetInterpreter">false</boolProp>
+                    </BeanShellAssertion>
+                    <hashTree/>
+                  </hashTree>
+                </hashTree>
+              </hashTree>
+            </hashTree>
+          </hashTree>
+          <DebugSampler guiclass="TestBeanGUI" testclass="DebugSampler" testname="Debug Sampler" enabled="true">
+            <boolProp name="displayJMeterProperties">false</boolProp>
+            <boolProp name="displayJMeterVariables">true</boolProp>
+            <boolProp name="displaySystemProperties">false</boolProp>
+          </DebugSampler>
+          <hashTree/>
+          <BeanShellSampler guiclass="BeanShellSamplerGui" testclass="BeanShellSampler" testname="附加：自增用例编号（No+1）" enabled="true">
+            <stringProp name="BeanShellSampler.query">str = vars.get(&quot;No&quot;);
+str1 = Integer.parseInt(str) + 1;
+vars.put(&quot;No&quot;,str1.toString());
+
+
+    </stringProp>
+            <stringProp name="BeanShellSampler.filename"></stringProp>
+            <stringProp name="BeanShellSampler.parameters"></stringProp>
+            <boolProp name="BeanShellSampler.resetInterpreter">false</boolProp>
+          </BeanShellSampler>
+          <hashTree/>
+        </hashTree>
+        <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="其他" enabled="false"/>
+        <hashTree>
+          <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="[${xc}]-正例${No}：（正确的用户名密码）重复测试增删" enabled="false">
+            <boolProp name="TransactionController.includeTimers">false</boolProp>
+            <boolProp name="TransactionController.parent">true</boolProp>
+          </TransactionController>
+          <hashTree>
+            <UserParameters guiclass="UserParametersGui" testclass="UserParameters" testname="用户参数" enabled="true">
+              <collectionProp name="UserParameters.names">
+                <stringProp name="1216985755">password</stringProp>
+                <stringProp name="-265713450">username</stringProp>
+              </collectionProp>
+              <collectionProp name="UserParameters.thread_values">
+                <collectionProp name="1144668052">
+                  <stringProp name="1355609528">${adminpwd}</stringProp>
+                  <stringProp name="-928272006">${adminname}</stringProp>
+                </collectionProp>
+                <collectionProp name="1203579911">
+                  <stringProp name="759035">密码</stringProp>
+                  <stringProp name="29623262">用户名</stringProp>
+                </collectionProp>
+              </collectionProp>
+              <boolProp name="UserParameters.per_iteration">true</boolProp>
+              <stringProp name="TestPlan.comments">${__CSVRead(${__V(file_url)},0)}</stringProp>
+            </UserParameters>
+            <hashTree/>
+            <ModuleController guiclass="ModuleControllerGui" testclass="ModuleController" testname="Module Controller" enabled="true">
+              <collectionProp name="ModuleController.node_path">
+                <stringProp name="764597751">Test Plan</stringProp>
+                <stringProp name="764597751">Test Plan</stringProp>
+                <stringProp name="-1955561607">【当前-通用模块库】Test Fragment</stringProp>
+                <stringProp name="744875019">---登录相关---</stringProp>
+                <stringProp name="183365976">##登录接口##</stringProp>
+                <stringProp name="-1859174498">【登录】通用：正确入参，检查接口返回成功-输出{out_token} {out_uid}{out_email}{out_phone}</stringProp>
+              </collectionProp>
+            </ModuleController>
+            <hashTree/>
+            <BeanShellSampler guiclass="BeanShellSamplerGui" testclass="BeanShellSampler" testname="附加：自增用例编号（No+1）" enabled="true">
+              <stringProp name="BeanShellSampler.query">str = vars.get(&quot;No&quot;);
+str1 = Integer.parseInt(str) + 1;
+vars.put(&quot;No&quot;,str1.toString());
+
+
+    </stringProp>
+              <stringProp name="BeanShellSampler.filename"></stringProp>
+              <stringProp name="BeanShellSampler.parameters"></stringProp>
+              <boolProp name="BeanShellSampler.resetInterpreter">false</boolProp>
+            </BeanShellSampler>
+            <hashTree/>
+          </hashTree>
+          <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="[${xc}]-正例${No}:测试登录后获取用户信息" enabled="false">
+            <boolProp name="TransactionController.includeTimers">false</boolProp>
+            <boolProp name="TransactionController.parent">true</boolProp>
+          </TransactionController>
+          <hashTree>
+            <UserParameters guiclass="UserParametersGui" testclass="UserParameters" testname="用户参数" enabled="true">
+              <collectionProp name="UserParameters.names">
+                <stringProp name="1216985755">password</stringProp>
+                <stringProp name="-265713450">username</stringProp>
+                <stringProp name="96619420">email</stringProp>
+                <stringProp name="106642798">phone</stringProp>
+              </collectionProp>
+              <collectionProp name="UserParameters.thread_values">
+                <collectionProp name="-1494166225">
+                  <stringProp name="1355609528">${adminpwd}</stringProp>
+                  <stringProp name="-928272006">${adminname}</stringProp>
+                  <stringProp name="508872955">xuyinhao@test${No}.com</stringProp>
+                  <stringProp name="711731162">13812341234</stringProp>
+                </collectionProp>
+                <collectionProp name="1294893415">
+                  <stringProp name="759035">密码</stringProp>
+                  <stringProp name="29623262">用户名</stringProp>
+                  <stringProp name="0"></stringProp>
+                  <stringProp name="0"></stringProp>
+                </collectionProp>
+              </collectionProp>
+              <boolProp name="UserParameters.per_iteration">true</boolProp>
+              <stringProp name="TestPlan.comments">${__CSVRead(${__V(file_url)},0)}</stringProp>
+            </UserParameters>
+            <hashTree/>
+            <ModuleController guiclass="ModuleControllerGui" testclass="ModuleController" testname="Module Controller-登录并返回token" enabled="true">
+              <collectionProp name="ModuleController.node_path">
+                <stringProp name="764597751">Test Plan</stringProp>
+                <stringProp name="764597751">Test Plan</stringProp>
+                <stringProp name="-1955561607">【当前-通用模块库】Test Fragment</stringProp>
+                <stringProp name="744875019">---登录相关---</stringProp>
+                <stringProp name="183365976">##登录接口##</stringProp>
+                <stringProp name="-1859174498">【登录】通用：正确入参，检查接口返回成功-输出{out_token} {out_uid}{out_email}{out_phone}</stringProp>
+              </collectionProp>
+            </ModuleController>
+            <hashTree/>
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="修改用户信息" enabled="true">
+              <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+              <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+                <collectionProp name="Arguments.arguments">
+                  <elementProp name="" elementType="HTTPArgument">
+                    <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                    <stringProp name="Argument.value">{&quot;userId&quot;:${out_uid},&quot;email&quot;:&quot;${email}&quot;,&quot;phone&quot;:&quot;${phone}&quot;}</stringProp>
+                    <stringProp name="Argument.metadata">=</stringProp>
+                  </elementProp>
+                </collectionProp>
+              </elementProp>
+              <stringProp name="HTTPSampler.domain"></stringProp>
+              <stringProp name="HTTPSampler.port"></stringProp>
+              <stringProp name="HTTPSampler.protocol"></stringProp>
+              <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+              <stringProp name="HTTPSampler.path">/paas-web/upmsapi/login/info</stringProp>
+              <stringProp name="HTTPSampler.method">POST</stringProp>
+              <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+              <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+              <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+              <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+              <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+              <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+              <stringProp name="HTTPSampler.response_timeout"></stringProp>
+            </HTTPSamplerProxy>
+            <hashTree>
+              <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+                <collectionProp name="HeaderManager.headers">
+                  <elementProp name="" elementType="Header">
+                    <stringProp name="Header.name">token</stringProp>
+                    <stringProp name="Header.value">${out_token}</stringProp>
+                  </elementProp>
+                </collectionProp>
+              </HeaderManager>
+              <hashTree/>
+              <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+                <collectionProp name="Asserion.test_strings">
+                  <stringProp name="-2120983600">&quot;state&quot;:&quot;success&quot;,&quot;code&quot;:200,&quot;data&quot;:null,</stringProp>
+                </collectionProp>
+                <stringProp name="Assertion.custom_message"></stringProp>
+                <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+                <boolProp name="Assertion.assume_success">false</boolProp>
+                <intProp name="Assertion.test_type">2</intProp>
+              </ResponseAssertion>
+              <hashTree/>
+            </hashTree>
+            <ModuleController guiclass="ModuleControllerGui" testclass="ModuleController" testname="Module Controller-再次登录检查email,phone" enabled="true">
+              <collectionProp name="ModuleController.node_path">
+                <stringProp name="764597751">Test Plan</stringProp>
+                <stringProp name="764597751">Test Plan</stringProp>
+                <stringProp name="-1955561607">【当前-通用模块库】Test Fragment</stringProp>
+                <stringProp name="744875019">---登录相关---</stringProp>
+                <stringProp name="183365976">##登录接口##</stringProp>
+                <stringProp name="-1859174498">【登录】通用：正确入参，检查接口返回成功-输出{out_token} {out_uid}{out_email}{out_phone}</stringProp>
+              </collectionProp>
+            </ModuleController>
+            <hashTree/>
+            <BeanShellAssertion guiclass="BeanShellAssertionGui" testclass="BeanShellAssertion" testname="判断邮箱，电话 值 - BeanShell Assertion" enabled="true">
+              <stringProp name="BeanShellAssertion.query">if (!vars.get(&quot;out_email&quot;).equals(&quot;${email}&quot;)) {
+	Failure = true;
+	FailureMessage = &quot;src value : &quot; +vars.get(&quot;out_email&quot;)+&quot; dst check: &quot;+&quot;${email}&quot;;
+	return False;
+}
+if (!vars.get(&quot;out_phone&quot;).equals(&quot;${phone}&quot;)) {
+	Failure = true;
+	FailureMessage = vars.get(&quot;out_phone&quot;);
+	return False;
+}
+</stringProp>
+              <stringProp name="BeanShellAssertion.filename"></stringProp>
+              <stringProp name="BeanShellAssertion.parameters"></stringProp>
+              <boolProp name="BeanShellAssertion.resetInterpreter">false</boolProp>
+            </BeanShellAssertion>
+            <hashTree/>
+            <BeanShellSampler guiclass="BeanShellSamplerGui" testclass="BeanShellSampler" testname="附加：自增用例编号（No+1）" enabled="true">
+              <stringProp name="BeanShellSampler.query">str = vars.get(&quot;No&quot;);
+str1 = Integer.parseInt(str) + 1;
+vars.put(&quot;No&quot;,str1.toString());
+
+
+    </stringProp>
+              <stringProp name="BeanShellSampler.filename"></stringProp>
+              <stringProp name="BeanShellSampler.parameters"></stringProp>
+              <boolProp name="BeanShellSampler.resetInterpreter">false</boolProp>
+            </BeanShellSampler>
+            <hashTree/>
+            <DebugSampler guiclass="TestBeanGUI" testclass="DebugSampler" testname="Debug Sampler" enabled="true">
+              <boolProp name="displayJMeterProperties">false</boolProp>
+              <boolProp name="displayJMeterVariables">true</boolProp>
+              <boolProp name="displaySystemProperties">false</boolProp>
+            </DebugSampler>
+            <hashTree/>
+          </hashTree>
+        </hashTree>
+      </hashTree>
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="场景：创建新用户并赋权（组织、角色、用户）（如果存在则不创建）" enabled="false">
+        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
+        <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
+          <boolProp name="LoopController.continue_forever">false</boolProp>
+          <stringProp name="LoopController.loops">1</stringProp>
+        </elementProp>
+        <stringProp name="ThreadGroup.num_threads">1</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">1</stringProp>
+        <boolProp name="ThreadGroup.scheduler">false</boolProp>
+        <stringProp name="ThreadGroup.duration"></stringProp>
+        <stringProp name="ThreadGroup.delay"></stringProp>
+        <boolProp name="ThreadGroup.same_user_on_next_iteration">true</boolProp>
+      </ThreadGroup>
+      <hashTree>
+        <BeanShellSampler guiclass="BeanShellSamplerGui" testclass="BeanShellSampler" testname="------------------------Sampler(获取线程组的名称)" enabled="true">
+          <stringProp name="BeanShellSampler.query">
+group =  ctx.getThreadGroup(); // 获取当前线程组
+str = group.getName(); // 获取线程组的名称
+//str = str.substring(0,4); // 截取字符串
+vars.put(&quot;xc&quot;,str);
+
+</stringProp>
+          <stringProp name="BeanShellSampler.filename"></stringProp>
+          <stringProp name="BeanShellSampler.parameters"></stringProp>
+          <boolProp name="BeanShellSampler.resetInterpreter">false</boolProp>
+        </BeanShellSampler>
+        <hashTree/>
+        <DebugSampler guiclass="TestBeanGUI" testclass="DebugSampler" testname="Debug Sampler" enabled="true">
+          <boolProp name="displayJMeterProperties">false</boolProp>
+          <boolProp name="displayJMeterVariables">true</boolProp>
+          <boolProp name="displaySystemProperties">false</boolProp>
+        </DebugSampler>
+        <hashTree/>
+        <UserParameters guiclass="UserParametersGui" testclass="UserParameters" testname="用户参数" enabled="true">
+          <collectionProp name="UserParameters.names">
+            <stringProp name="-781561406">oldpassword</stringProp>
+            <stringProp name="-1885879237">newpassword</stringProp>
+            <stringProp name="-265713450">username</stringProp>
+            <stringProp name="1216985755">password</stringProp>
+          </collectionProp>
+          <collectionProp name="UserParameters.thread_values">
+            <collectionProp name="-955269640">
+              <stringProp name="-2095111793">${pwdBeyond#11}</stringProp>
+              <stringProp name="-2095111762">${pwdBeyond#12}</stringProp>
+              <stringProp name="-796152643">jmetertestuser01</stringProp>
+              <stringProp name="-1207672494">${oldpassword}</stringProp>
+            </collectionProp>
+            <collectionProp name="772031937">
+              <stringProp name="0"></stringProp>
+              <stringProp name="0"></stringProp>
+              <stringProp name="0"></stringProp>
+              <stringProp name="0"></stringProp>
+            </collectionProp>
+          </collectionProp>
+          <boolProp name="UserParameters.per_iteration">true</boolProp>
+          <stringProp name="TestPlan.comments">${__CSVRead(${__V(file_url)},0)}</stringProp>
+        </UserParameters>
+        <hashTree/>
+        <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="【调试】创建组织-角色并创建空用户 - Simple Controller" enabled="true"/>
+        <hashTree>
+          <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Constant Timer" enabled="true">
+            <stringProp name="ConstantTimer.delay">100</stringProp>
+          </ConstantTimer>
+          <hashTree/>
+          <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="[${xc}]-正例${No}:创建一个用户于后续测试 - 创建组织、角色并创建用户赋权" enabled="true">
+            <boolProp name="TransactionController.includeTimers">false</boolProp>
+            <boolProp name="TransactionController.parent">true</boolProp>
+          </TransactionController>
+          <hashTree>
+            <UserParameters guiclass="UserParametersGui" testclass="UserParameters" testname="用户参数" enabled="true">
+              <collectionProp name="UserParameters.names">
+                <stringProp name="1216985755">password</stringProp>
+                <stringProp name="-265713450">username</stringProp>
+                <stringProp name="96619420">email</stringProp>
+                <stringProp name="106642798">phone</stringProp>
+                <stringProp name="-1204086929">orgname</stringProp>
+                <stringProp name="1321748606">orgfullname</stringProp>
+                <stringProp name="-1204380811">orgdesc</stringProp>
+                <stringProp name="-265826303">rolename</stringProp>
+                <stringProp name="-266120185">roledesc</stringProp>
+                <stringProp name="1440">--</stringProp>
+                <stringProp name="-1204441994">localname</stringProp>
+                <stringProp name="1309038353">localemail</stringProp>
+                <stringProp name="1319061731">localphone</stringProp>
+                <stringProp name="-1718514316">loginname</stringProp>
+              </collectionProp>
+              <collectionProp name="UserParameters.thread_values">
+                <collectionProp name="1620288589">
+                  <stringProp name="1355609528">${adminpwd}</stringProp>
+                  <stringProp name="-928272006">${adminname}</stringProp>
+                  <stringProp name="-1012991408">xuyinhao@test.com</stringProp>
+                  <stringProp name="711731162">13812341234</stringProp>
+                  <stringProp name="358821069">jmeter_测试组织</stringProp>
+                  <stringProp name="-534364614">jmeter_测试组织_全称</stringProp>
+                  <stringProp name="-1883190839">jmeter_测试组织_描述.信息</stringProp>
+                  <stringProp name="358909738">jmeter_测试角色</stringProp>
+                  <stringProp name="1198393323">jmeter_测试角色 all role角色</stringProp>
+                  <stringProp name="1440">--</stringProp>
+                  <stringProp name="532126369">${testusername}名称</stringProp>
+                  <stringProp name="531691202">${testusername}.01@${testusername}.com</stringProp>
+                  <stringProp name="-2107020086">17000000000</stringProp>
+                  <stringProp name="-303357282">${testusername}</stringProp>
+                </collectionProp>
+                <collectionProp name="1631480228">
+                  <stringProp name="759035">密码</stringProp>
+                  <stringProp name="29623262">用户名</stringProp>
+                  <stringProp name="774365341">修改用户邮箱</stringProp>
+                  <stringProp name="773882564">修改用户号码</stringProp>
+                  <stringProp name="32213994">组织名</stringProp>
+                  <stringProp name="998644070">组织全程</stringProp>
+                  <stringProp name="2065710469">组织描述备注</stringProp>
+                  <stringProp name="34962733">角色名</stringProp>
+                  <stringProp name="1084006625">角色描述</stringProp>
+                  <stringProp name="44685">---</stringProp>
+                  <stringProp name="918352338">用户名称</stringProp>
+                  <stringProp name="918833938">用户邮箱</stringProp>
+                  <stringProp name="918620055">用户电话</stringProp>
+                  <stringProp name="29926163">登录名</stringProp>
+                </collectionProp>
+              </collectionProp>
+              <boolProp name="UserParameters.per_iteration">true</boolProp>
+              <stringProp name="TestPlan.comments">${__CSVRead(${__V(file_url)},0)}</stringProp>
+            </UserParameters>
+            <hashTree/>
+            <ModuleController guiclass="ModuleControllerGui" testclass="ModuleController" testname="登录并返回token - Module Controller-" enabled="true">
+              <collectionProp name="ModuleController.node_path">
+                <stringProp name="764597751">Test Plan</stringProp>
+                <stringProp name="764597751">Test Plan</stringProp>
+                <stringProp name="-1955561607">【当前-通用模块库】Test Fragment</stringProp>
+                <stringProp name="744875019">---登录相关---</stringProp>
+                <stringProp name="183365976">##登录接口##</stringProp>
+                <stringProp name="-1859174498">【登录】通用：正确入参，检查接口返回成功-输出{out_token} {out_uid}{out_email}{out_phone}</stringProp>
+              </collectionProp>
+            </ModuleController>
+            <hashTree/>
+            <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="组织不存在则创建" enabled="true"/>
+            <hashTree>
+              <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+                <collectionProp name="HeaderManager.headers">
+                  <elementProp name="" elementType="Header">
+                    <stringProp name="Header.name">token</stringProp>
+                    <stringProp name="Header.value">${out_token}</stringProp>
+                  </elementProp>
+                </collectionProp>
+              </HeaderManager>
+              <hashTree/>
+              <ModuleController guiclass="ModuleControllerGui" testclass="ModuleController" testname="登录并返回token - Module Controller-" enabled="false">
+                <collectionProp name="ModuleController.node_path">
+                  <stringProp name="764597751">Test Plan</stringProp>
+                  <stringProp name="764597751">Test Plan</stringProp>
+                  <stringProp name="-1955561607">【当前-通用模块库】Test Fragment</stringProp>
+                  <stringProp name="744875019">---登录相关---</stringProp>
+                  <stringProp name="183365976">##登录接口##</stringProp>
+                  <stringProp name="-1859174498">【登录】通用：正确入参，检查接口返回成功-输出{out_token} {out_uid}{out_email}{out_phone}</stringProp>
+                </collectionProp>
+              </ModuleController>
+              <hashTree/>
+              <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="获取最新组存在 并返回 {grpid}" enabled="true">
+                <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+                  <collectionProp name="Arguments.arguments"/>
+                </elementProp>
+                <stringProp name="HTTPSampler.domain"></stringProp>
+                <stringProp name="HTTPSampler.port"></stringProp>
+                <stringProp name="HTTPSampler.protocol"></stringProp>
+                <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+                <stringProp name="HTTPSampler.path">/paas-web/upmsapi/organizations?orgName=&amp;currPageNum=1&amp;pageSize=200</stringProp>
+                <stringProp name="HTTPSampler.method">GET</stringProp>
+                <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+                <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+                <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+                <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+                <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+                <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+                <stringProp name="HTTPSampler.response_timeout"></stringProp>
+              </HTTPSamplerProxy>
+              <hashTree>
+                <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="Regular Expression Extractor" enabled="true">
+                  <stringProp name="RegexExtractor.useHeaders">false</stringProp>
+                  <stringProp name="RegexExtractor.refname">grpid</stringProp>
+                  <stringProp name="RegexExtractor.regex">{&quot;id&quot;:(\w+?),&quot;createTime&quot;:&quot;(.*?)&quot;,&quot;updateTime&quot;:&quot;(.*?)&quot;,&quot;orgName&quot;:&quot;${orgname}&quot;,&quot;fullName&quot;:&quot;${orgfullname}&quot;,&quot;orgDesc&quot;:&quot;${orgdesc}&quot;,</stringProp>
+                  <stringProp name="RegexExtractor.template">$1$</stringProp>
+                  <stringProp name="RegexExtractor.default"></stringProp>
+                  <stringProp name="RegexExtractor.match_number">1</stringProp>
+                  <boolProp name="RegexExtractor.default_empty_value">true</boolProp>
+                </RegexExtractor>
+                <hashTree/>
+              </hashTree>
+              <IfController guiclass="IfControllerPanel" testclass="IfController" testname="如果组织存在 则删除组织 If Controller" enabled="true">
+                <stringProp name="IfController.condition">${__jexl3(&quot;${grpid}&quot;==&quot;&quot;,)}</stringProp>
+                <boolProp name="IfController.evaluateAll">false</boolProp>
+                <boolProp name="IfController.useExpression">true</boolProp>
+              </IfController>
+              <hashTree>
+                <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="创建组织 ${grpname}" enabled="true">
+                  <boolProp name="TransactionController.includeTimers">false</boolProp>
+                  <boolProp name="TransactionController.parent">false</boolProp>
+                </TransactionController>
+                <hashTree>
+                  <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+                    <collectionProp name="HeaderManager.headers">
+                      <elementProp name="" elementType="Header">
+                        <stringProp name="Header.name">token</stringProp>
+                        <stringProp name="Header.value">${out_token}</stringProp>
+                      </elementProp>
+                    </collectionProp>
+                  </HeaderManager>
+                  <hashTree/>
+                  <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="创建组织" enabled="true">
+                    <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+                    <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+                      <collectionProp name="Arguments.arguments">
+                        <elementProp name="" elementType="HTTPArgument">
+                          <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                          <stringProp name="Argument.value">{&quot;orgName&quot;:&quot;${orgname}&quot;,&quot;orgDesc&quot;:&quot;${orgdesc}&quot;,&quot;fullName&quot;:&quot;${orgfullname}&quot;}</stringProp>
+                          <stringProp name="Argument.metadata">=</stringProp>
+                        </elementProp>
+                      </collectionProp>
+                    </elementProp>
+                    <stringProp name="HTTPSampler.domain"></stringProp>
+                    <stringProp name="HTTPSampler.port"></stringProp>
+                    <stringProp name="HTTPSampler.protocol"></stringProp>
+                    <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+                    <stringProp name="HTTPSampler.path">/paas-web/upmsapi/organizations</stringProp>
+                    <stringProp name="HTTPSampler.method">POST</stringProp>
+                    <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+                    <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+                    <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+                    <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+                    <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+                    <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+                    <stringProp name="HTTPSampler.response_timeout"></stringProp>
+                  </HTTPSamplerProxy>
+                  <hashTree>
+                    <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+                      <collectionProp name="Asserion.test_strings">
+                        <stringProp name="1317820666">{&quot;message&quot;:&quot;新增组织成功&quot;,&quot;exceptionStackTrace&quot;:null,&quot;state&quot;:&quot;success&quot;,&quot;code&quot;:200,&quot;data&quot;:null,&quot;entity&quot;:null}</stringProp>
+                      </collectionProp>
+                      <stringProp name="Assertion.custom_message"></stringProp>
+                      <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+                      <boolProp name="Assertion.assume_success">false</boolProp>
+                      <intProp name="Assertion.test_type">8</intProp>
+                    </ResponseAssertion>
+                    <hashTree/>
+                  </hashTree>
+                  <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="orgs 服务树刷新接口" enabled="true">
+                    <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+                      <collectionProp name="Arguments.arguments"/>
+                    </elementProp>
+                    <stringProp name="HTTPSampler.domain"></stringProp>
+                    <stringProp name="HTTPSampler.port"></stringProp>
+                    <stringProp name="HTTPSampler.protocol"></stringProp>
+                    <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+                    <stringProp name="HTTPSampler.path">/paas-web/servicetreeapi/cache/orgs</stringProp>
+                    <stringProp name="HTTPSampler.method">GET</stringProp>
+                    <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+                    <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+                    <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+                    <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+                    <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+                    <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+                    <stringProp name="HTTPSampler.response_timeout"></stringProp>
+                  </HTTPSamplerProxy>
+                  <hashTree>
+                    <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+                      <collectionProp name="Asserion.test_strings">
+                        <stringProp name="-1627606637">{&quot;message&quot;:null,&quot;exceptionStackTrace&quot;:null,&quot;state&quot;:&quot;success&quot;,&quot;code&quot;:200,&quot;data&quot;:null,&quot;entity&quot;:null}</stringProp>
+                      </collectionProp>
+                      <stringProp name="Assertion.custom_message"></stringProp>
+                      <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+                      <boolProp name="Assertion.assume_success">false</boolProp>
+                      <intProp name="Assertion.test_type">8</intProp>
+                    </ResponseAssertion>
+                    <hashTree/>
+                  </hashTree>
+                  <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="获取最新组存在 并返回 {grpid}" enabled="true">
+                    <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+                      <collectionProp name="Arguments.arguments">
+                        <elementProp name="orgName" elementType="HTTPArgument">
+                          <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                          <stringProp name="Argument.value"></stringProp>
+                          <stringProp name="Argument.metadata">=</stringProp>
+                          <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                          <stringProp name="Argument.name">orgName</stringProp>
+                        </elementProp>
+                        <elementProp name="currPageNum" elementType="HTTPArgument">
+                          <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                          <stringProp name="Argument.value">1</stringProp>
+                          <stringProp name="Argument.metadata">=</stringProp>
+                          <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                          <stringProp name="Argument.name">currPageNum</stringProp>
+                        </elementProp>
+                        <elementProp name="pageSize" elementType="HTTPArgument">
+                          <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                          <stringProp name="Argument.value">100</stringProp>
+                          <stringProp name="Argument.metadata">=</stringProp>
+                          <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                          <stringProp name="Argument.name">pageSize</stringProp>
+                        </elementProp>
+                      </collectionProp>
+                    </elementProp>
+                    <stringProp name="HTTPSampler.domain"></stringProp>
+                    <stringProp name="HTTPSampler.port"></stringProp>
+                    <stringProp name="HTTPSampler.protocol"></stringProp>
+                    <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+                    <stringProp name="HTTPSampler.path">/paas-web/upmsapi/organizations</stringProp>
+                    <stringProp name="HTTPSampler.method">GET</stringProp>
+                    <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+                    <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+                    <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+                    <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+                    <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+                    <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+                    <stringProp name="HTTPSampler.response_timeout"></stringProp>
+                  </HTTPSamplerProxy>
+                  <hashTree>
+                    <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+                      <collectionProp name="Asserion.test_strings">
+                        <stringProp name="-578996394">&quot;searchCount&quot;:true,&quot;pages&quot;:1</stringProp>
+                        <stringProp name="-1953575142">&quot;orgName&quot;:&quot;${orgname}&quot;,&quot;fullName&quot;:&quot;${orgfullname}&quot;,</stringProp>
+                        <stringProp name="1737826337">&quot;orgDesc&quot;:&quot;${orgdesc}&quot;,&quot;sourceType&quot;:0</stringProp>
+                      </collectionProp>
+                      <stringProp name="Assertion.custom_message"></stringProp>
+                      <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+                      <boolProp name="Assertion.assume_success">false</boolProp>
+                      <intProp name="Assertion.test_type">2</intProp>
+                    </ResponseAssertion>
+                    <hashTree/>
+                    <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="grpid - Regular Expression Extractor" enabled="true">
+                      <stringProp name="RegexExtractor.useHeaders">false</stringProp>
+                      <stringProp name="RegexExtractor.refname">grpid</stringProp>
+                      <stringProp name="RegexExtractor.regex">{&quot;id&quot;:(\w+?),&quot;createTime&quot;:&quot;(.*?)&quot;,&quot;updateTime&quot;:&quot;(.*?)&quot;,&quot;orgName&quot;:&quot;${orgname}&quot;,&quot;fullName&quot;:&quot;${orgfullname}&quot;,&quot;orgDesc&quot;:&quot;${orgdesc}&quot;,</stringProp>
+                      <stringProp name="RegexExtractor.template">$1$</stringProp>
+                      <stringProp name="RegexExtractor.default">NGRPID_ERR</stringProp>
+                      <stringProp name="RegexExtractor.match_number">1</stringProp>
+                    </RegexExtractor>
+                    <hashTree/>
+                  </hashTree>
+                </hashTree>
+              </hashTree>
+            </hashTree>
+            <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="角色不存在则创建" enabled="true"/>
+            <hashTree>
+              <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+                <collectionProp name="HeaderManager.headers">
+                  <elementProp name="" elementType="Header">
+                    <stringProp name="Header.name">token</stringProp>
+                    <stringProp name="Header.value">${out_token}</stringProp>
+                  </elementProp>
+                </collectionProp>
+              </HeaderManager>
+              <hashTree/>
+              <ModuleController guiclass="ModuleControllerGui" testclass="ModuleController" testname="登录并返回token - Module Controller-" enabled="false">
+                <collectionProp name="ModuleController.node_path">
+                  <stringProp name="764597751">Test Plan</stringProp>
+                  <stringProp name="764597751">Test Plan</stringProp>
+                  <stringProp name="-1955561607">【当前-通用模块库】Test Fragment</stringProp>
+                  <stringProp name="744875019">---登录相关---</stringProp>
+                  <stringProp name="183365976">##登录接口##</stringProp>
+                  <stringProp name="-1859174498">【登录】通用：正确入参，检查接口返回成功-输出{out_token} {out_uid}{out_email}{out_phone}</stringProp>
+                </collectionProp>
+              </ModuleController>
+              <hashTree/>
+              <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="获取角色存在,并返回 {roleid}" enabled="true">
+                <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+                  <collectionProp name="Arguments.arguments">
+                    <elementProp name="cnName" elementType="HTTPArgument">
+                      <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                      <stringProp name="Argument.value"></stringProp>
+                      <stringProp name="Argument.metadata">=</stringProp>
+                      <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                      <stringProp name="Argument.name">cnName</stringProp>
+                    </elementProp>
+                    <elementProp name="pageNumber" elementType="HTTPArgument">
+                      <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                      <stringProp name="Argument.value">1</stringProp>
+                      <stringProp name="Argument.metadata">=</stringProp>
+                      <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                      <stringProp name="Argument.name">pageNumber</stringProp>
+                    </elementProp>
+                    <elementProp name="pageSize" elementType="HTTPArgument">
+                      <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                      <stringProp name="Argument.value">200</stringProp>
+                      <stringProp name="Argument.metadata">=</stringProp>
+                      <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                      <stringProp name="Argument.name">pageSize</stringProp>
+                    </elementProp>
+                  </collectionProp>
+                </elementProp>
+                <stringProp name="HTTPSampler.domain"></stringProp>
+                <stringProp name="HTTPSampler.port"></stringProp>
+                <stringProp name="HTTPSampler.protocol"></stringProp>
+                <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+                <stringProp name="HTTPSampler.path">/paas-web/upmsapi/roles</stringProp>
+                <stringProp name="HTTPSampler.method">GET</stringProp>
+                <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+                <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+                <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+                <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+                <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+                <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+                <stringProp name="HTTPSampler.response_timeout"></stringProp>
+              </HTTPSamplerProxy>
+              <hashTree>
+                <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="roleid -Regular Expression Extractor" enabled="true">
+                  <stringProp name="RegexExtractor.useHeaders">false</stringProp>
+                  <stringProp name="RegexExtractor.refname">roleid</stringProp>
+                  <stringProp name="RegexExtractor.regex">{&quot;id&quot;:(\w+?),&quot;cnName&quot;:&quot;${rolename}&quot;,&quot;level&quot;:(.*?),&quot;roleType&quot;:(.*?),&quot;description&quot;:&quot;${roledesc}&quot;</stringProp>
+                  <stringProp name="RegexExtractor.template">$1$</stringProp>
+                  <stringProp name="RegexExtractor.default"></stringProp>
+                  <stringProp name="RegexExtractor.match_number">1</stringProp>
+                  <boolProp name="RegexExtractor.default_empty_value">true</boolProp>
+                </RegexExtractor>
+                <hashTree/>
+              </hashTree>
+              <IfController guiclass="IfControllerPanel" testclass="IfController" testname="如果角色存在 则删除角色 If Controller" enabled="true">
+                <stringProp name="IfController.condition">${__jexl3(&quot;${roleid}&quot;==&quot;&quot;,)}</stringProp>
+                <boolProp name="IfController.evaluateAll">false</boolProp>
+                <boolProp name="IfController.useExpression">true</boolProp>
+              </IfController>
+              <hashTree>
+                <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="创建角色 ${rolename} all-role - Simple Controller" enabled="true"/>
+                <hashTree>
+                  <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+                    <collectionProp name="HeaderManager.headers">
+                      <elementProp name="" elementType="Header">
+                        <stringProp name="Header.name">token</stringProp>
+                        <stringProp name="Header.value">${out_token}</stringProp>
+                      </elementProp>
+                    </collectionProp>
+                  </HeaderManager>
+                  <hashTree/>
+                  <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="创建 all role 角色  - {roleid}" enabled="true">
+                    <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+                    <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+                      <collectionProp name="Arguments.arguments">
+                        <elementProp name="" elementType="HTTPArgument">
+                          <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                          <stringProp name="Argument.value">{&quot;cnName&quot;:&quot;${rolename}&quot;,&quot;level&quot;:&quot;&quot;,&quot;description&quot;:&quot;${roledesc}&quot;,&quot;resourceIds&quot;:${allroleid}}</stringProp>
+                          <stringProp name="Argument.metadata">=</stringProp>
+                        </elementProp>
+                      </collectionProp>
+                    </elementProp>
+                    <stringProp name="HTTPSampler.domain"></stringProp>
+                    <stringProp name="HTTPSampler.port"></stringProp>
+                    <stringProp name="HTTPSampler.protocol"></stringProp>
+                    <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+                    <stringProp name="HTTPSampler.path">/paas-web/upmsapi/roles</stringProp>
+                    <stringProp name="HTTPSampler.method">POST</stringProp>
+                    <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+                    <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+                    <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+                    <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+                    <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+                    <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+                    <stringProp name="HTTPSampler.response_timeout"></stringProp>
+                  </HTTPSamplerProxy>
+                  <hashTree>
+                    <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+                      <collectionProp name="Asserion.test_strings">
+                        <stringProp name="-1174819925">{&quot;message&quot;:null,&quot;exceptionStackTrace&quot;:null,&quot;state&quot;:&quot;success&quot;,&quot;code&quot;:200,&quot;data&quot;:</stringProp>
+                      </collectionProp>
+                      <stringProp name="Assertion.custom_message"></stringProp>
+                      <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+                      <boolProp name="Assertion.assume_success">false</boolProp>
+                      <intProp name="Assertion.test_type">2</intProp>
+                    </ResponseAssertion>
+                    <hashTree/>
+                    <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="Regular Expression Extractor" enabled="true">
+                      <stringProp name="RegexExtractor.useHeaders">false</stringProp>
+                      <stringProp name="RegexExtractor.refname">roleid</stringProp>
+                      <stringProp name="RegexExtractor.regex">&quot;data&quot;:(.*?),&quot;entity&quot;:null</stringProp>
+                      <stringProp name="RegexExtractor.template">$1$</stringProp>
+                      <stringProp name="RegexExtractor.default">NROLEID_ERR</stringProp>
+                      <stringProp name="RegexExtractor.match_number">1</stringProp>
+                    </RegexExtractor>
+                    <hashTree/>
+                  </hashTree>
+                </hashTree>
+              </hashTree>
+            </hashTree>
+            <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="用户不存在则创建" enabled="true"/>
+            <hashTree>
+              <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+                <collectionProp name="HeaderManager.headers">
+                  <elementProp name="" elementType="Header">
+                    <stringProp name="Header.name">token</stringProp>
+                    <stringProp name="Header.value">${out_token}</stringProp>
+                  </elementProp>
+                </collectionProp>
+              </HeaderManager>
+              <hashTree/>
+              <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="获取用户存在,并返回 {deluid}" enabled="true">
+                <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+                  <collectionProp name="Arguments.arguments">
+                    <elementProp name="name" elementType="HTTPArgument">
+                      <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                      <stringProp name="Argument.value"></stringProp>
+                      <stringProp name="Argument.metadata">=</stringProp>
+                      <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                      <stringProp name="Argument.name">name</stringProp>
+                    </elementProp>
+                    <elementProp name="pageNumber" elementType="HTTPArgument">
+                      <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                      <stringProp name="Argument.value">1</stringProp>
+                      <stringProp name="Argument.metadata">=</stringProp>
+                      <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                      <stringProp name="Argument.name">pageNumber</stringProp>
+                    </elementProp>
+                    <elementProp name="pageSize" elementType="HTTPArgument">
+                      <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                      <stringProp name="Argument.value">200</stringProp>
+                      <stringProp name="Argument.metadata">=</stringProp>
+                      <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                      <stringProp name="Argument.name">pageSize</stringProp>
+                    </elementProp>
+                  </collectionProp>
+                </elementProp>
+                <stringProp name="HTTPSampler.domain"></stringProp>
+                <stringProp name="HTTPSampler.port"></stringProp>
+                <stringProp name="HTTPSampler.protocol"></stringProp>
+                <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+                <stringProp name="HTTPSampler.path">paas-web/upmsapi/accounts</stringProp>
+                <stringProp name="HTTPSampler.method">GET</stringProp>
+                <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+                <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+                <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+                <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+                <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+                <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+                <stringProp name="HTTPSampler.response_timeout"></stringProp>
+              </HTTPSamplerProxy>
+              <hashTree>
+                <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="Regular Expression Extractor" enabled="true">
+                  <stringProp name="RegexExtractor.useHeaders">false</stringProp>
+                  <stringProp name="RegexExtractor.refname">deluid</stringProp>
+                  <stringProp name="RegexExtractor.regex">&quot;login&quot;:&quot;${loginname}&quot;,(.*?),&quot;id&quot;:(\w+?),</stringProp>
+                  <stringProp name="RegexExtractor.template">$2$</stringProp>
+                  <stringProp name="RegexExtractor.default"></stringProp>
+                  <stringProp name="RegexExtractor.match_number">1</stringProp>
+                  <boolProp name="RegexExtractor.default_empty_value">true</boolProp>
+                </RegexExtractor>
+                <hashTree/>
+              </hashTree>
+              <IfController guiclass="IfControllerPanel" testclass="IfController" testname="如果用户存在 则删除用户 If Controller" enabled="true">
+                <stringProp name="IfController.condition">${__jexl3(&quot;${deluid}&quot;==&quot;&quot;,)}</stringProp>
+                <boolProp name="IfController.evaluateAll">false</boolProp>
+                <boolProp name="IfController.useExpression">true</boolProp>
+              </IfController>
+              <hashTree>
+                <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+                  <collectionProp name="HeaderManager.headers">
+                    <elementProp name="" elementType="Header">
+                      <stringProp name="Header.name">token</stringProp>
+                      <stringProp name="Header.value">${out_token}</stringProp>
+                    </elementProp>
+                  </collectionProp>
+                </HeaderManager>
+                <hashTree/>
+                <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="创建用户 授权 登录 修改个人信息并验证 - Simple Controller" enabled="true"/>
+                <hashTree>
+                  <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+                    <collectionProp name="HeaderManager.headers">
+                      <elementProp name="" elementType="Header">
+                        <stringProp name="Header.name">token</stringProp>
+                        <stringProp name="Header.value">${out_token}</stringProp>
+                      </elementProp>
+                    </collectionProp>
+                  </HeaderManager>
+                  <hashTree/>
+                  <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="创建用户" enabled="true">
+                    <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+                    <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+                      <collectionProp name="Arguments.arguments">
+                        <elementProp name="" elementType="HTTPArgument">
+                          <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                          <stringProp name="Argument.value">{&quot;name&quot;:&quot;${localname}&quot;,&quot;email&quot;:&quot;${localemail}&quot;,&quot;phone&quot;:&quot;${localphone}&quot;,&quot;orgIds&quot;:[${grpid}],&quot;login&quot;:&quot;${loginname}&quot;}</stringProp>
+                          <stringProp name="Argument.metadata">=</stringProp>
+                        </elementProp>
+                      </collectionProp>
+                    </elementProp>
+                    <stringProp name="HTTPSampler.domain"></stringProp>
+                    <stringProp name="HTTPSampler.port"></stringProp>
+                    <stringProp name="HTTPSampler.protocol"></stringProp>
+                    <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+                    <stringProp name="HTTPSampler.path">/paas-web/upmsapi/accounts</stringProp>
+                    <stringProp name="HTTPSampler.method">POST</stringProp>
+                    <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+                    <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+                    <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+                    <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+                    <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+                    <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+                    <stringProp name="HTTPSampler.response_timeout"></stringProp>
+                  </HTTPSamplerProxy>
+                  <hashTree>
+                    <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+                      <collectionProp name="Asserion.test_strings">
+                        <stringProp name="-1174819925">{&quot;message&quot;:null,&quot;exceptionStackTrace&quot;:null,&quot;state&quot;:&quot;success&quot;,&quot;code&quot;:200,&quot;data&quot;:</stringProp>
+                      </collectionProp>
+                      <stringProp name="Assertion.custom_message"></stringProp>
+                      <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+                      <boolProp name="Assertion.assume_success">false</boolProp>
+                      <intProp name="Assertion.test_type">2</intProp>
+                    </ResponseAssertion>
+                    <hashTree/>
+                  </hashTree>
+                  <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="获取账户信息by loginname -- {userid}" enabled="true">
+                    <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+                      <collectionProp name="Arguments.arguments">
+                        <elementProp name="name" elementType="HTTPArgument">
+                          <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                          <stringProp name="Argument.value"></stringProp>
+                          <stringProp name="Argument.metadata">=</stringProp>
+                          <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                          <stringProp name="Argument.name">name</stringProp>
+                        </elementProp>
+                        <elementProp name="currPageNum" elementType="HTTPArgument">
+                          <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                          <stringProp name="Argument.value">1</stringProp>
+                          <stringProp name="Argument.metadata">=</stringProp>
+                          <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                          <stringProp name="Argument.name">currPageNum</stringProp>
+                        </elementProp>
+                        <elementProp name="pageSize" elementType="HTTPArgument">
+                          <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                          <stringProp name="Argument.value">1000</stringProp>
+                          <stringProp name="Argument.metadata">=</stringProp>
+                          <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                          <stringProp name="Argument.name">pageSize</stringProp>
+                        </elementProp>
+                      </collectionProp>
+                    </elementProp>
+                    <stringProp name="HTTPSampler.domain"></stringProp>
+                    <stringProp name="HTTPSampler.port"></stringProp>
+                    <stringProp name="HTTPSampler.protocol"></stringProp>
+                    <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+                    <stringProp name="HTTPSampler.path">/paas-web/upmsapi/accounts?</stringProp>
+                    <stringProp name="HTTPSampler.method">GET</stringProp>
+                    <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+                    <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+                    <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+                    <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+                    <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+                    <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+                    <stringProp name="HTTPSampler.response_timeout"></stringProp>
+                  </HTTPSamplerProxy>
+                  <hashTree>
+                    <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="{userid} Regular Expression Extractor  " enabled="true">
+                      <stringProp name="RegexExtractor.useHeaders">false</stringProp>
+                      <stringProp name="RegexExtractor.refname">userid</stringProp>
+                      <stringProp name="RegexExtractor.regex">&quot;login&quot;:&quot;${loginname}&quot;,(.*?),&quot;id&quot;:(.*?),</stringProp>
+                      <stringProp name="RegexExtractor.template">$2$</stringProp>
+                      <stringProp name="RegexExtractor.default">USERID_ERR</stringProp>
+                      <stringProp name="RegexExtractor.match_number">1</stringProp>
+                    </RegexExtractor>
+                    <hashTree/>
+                  </hashTree>
+                  <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="用户赋权-角色" enabled="true">
+                    <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+                    <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+                      <collectionProp name="Arguments.arguments">
+                        <elementProp name="" elementType="HTTPArgument">
+                          <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                          <stringProp name="Argument.value">{&quot;roleIds&quot;:[${roleid}]}</stringProp>
+                          <stringProp name="Argument.metadata">=</stringProp>
+                        </elementProp>
+                      </collectionProp>
+                    </elementProp>
+                    <stringProp name="HTTPSampler.domain"></stringProp>
+                    <stringProp name="HTTPSampler.port"></stringProp>
+                    <stringProp name="HTTPSampler.protocol"></stringProp>
+                    <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+                    <stringProp name="HTTPSampler.path">/paas-web/upmsapi/roles/${userid}</stringProp>
+                    <stringProp name="HTTPSampler.method">POST</stringProp>
+                    <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+                    <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+                    <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+                    <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+                    <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+                    <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+                    <stringProp name="HTTPSampler.response_timeout"></stringProp>
+                  </HTTPSamplerProxy>
+                  <hashTree>
+                    <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+                      <collectionProp name="Asserion.test_strings">
+                        <stringProp name="-1627606637">{&quot;message&quot;:null,&quot;exceptionStackTrace&quot;:null,&quot;state&quot;:&quot;success&quot;,&quot;code&quot;:200,&quot;data&quot;:null,&quot;entity&quot;:null}</stringProp>
+                      </collectionProp>
+                      <stringProp name="Assertion.custom_message"></stringProp>
+                      <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+                      <boolProp name="Assertion.assume_success">false</boolProp>
+                      <intProp name="Assertion.test_type">8</intProp>
+                    </ResponseAssertion>
+                    <hashTree/>
+                  </hashTree>
+                  <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="修改用户信息并验证" enabled="true"/>
+                  <hashTree>
+                    <UserParameters guiclass="UserParametersGui" testclass="UserParameters" testname="用户参数" enabled="true">
+                      <collectionProp name="UserParameters.names">
+                        <stringProp name="-265713450">username</stringProp>
+                        <stringProp name="1216985755">password</stringProp>
+                        <stringProp name="-781561406">oldpassword</stringProp>
+                        <stringProp name="-1885879237">newpassword</stringProp>
+                        <stringProp name="0"></stringProp>
+                      </collectionProp>
+                      <collectionProp name="UserParameters.thread_values">
+                        <collectionProp name="378378628">
+                          <stringProp name="930956704">${loginname}</stringProp>
+                          <stringProp name="1997441204">${pwd123456}</stringProp>
+                          <stringProp name="404756043">${password}</stringProp>
+                          <stringProp name="-2095111793">${pwdBeyond#11}</stringProp>
+                          <stringProp name="0"></stringProp>
+                        </collectionProp>
+                        <collectionProp name="1073196895">
+                          <stringProp name="-1698128530">新 用户名</stringProp>
+                          <stringProp name="-1534253855">登录的新密码</stringProp>
+                          <stringProp name="0"></stringProp>
+                          <stringProp name="0"></stringProp>
+                          <stringProp name="0"></stringProp>
+                        </collectionProp>
+                      </collectionProp>
+                      <boolProp name="UserParameters.per_iteration">true</boolProp>
+                      <stringProp name="TestPlan.comments">${__CSVRead(${__V(file_url)},0)}</stringProp>
+                    </UserParameters>
+                    <hashTree/>
+                    <ModuleController guiclass="ModuleControllerGui" testclass="ModuleController" testname="Module Controller-登录并返回token" enabled="true">
+                      <collectionProp name="ModuleController.node_path">
+                        <stringProp name="764597751">Test Plan</stringProp>
+                        <stringProp name="764597751">Test Plan</stringProp>
+                        <stringProp name="-1955561607">【当前-通用模块库】Test Fragment</stringProp>
+                        <stringProp name="744875019">---登录相关---</stringProp>
+                        <stringProp name="183365976">##登录接口##</stringProp>
+                        <stringProp name="-1859174498">【登录】通用：正确入参，检查接口返回成功-输出{out_token} {out_uid}{out_email}{out_phone}</stringProp>
+                      </collectionProp>
+                    </ModuleController>
+                    <hashTree/>
+                    <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="修改密码 - Simple Controller" enabled="true"/>
+                    <hashTree>
+                      <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+                        <collectionProp name="HeaderManager.headers">
+                          <elementProp name="" elementType="Header">
+                            <stringProp name="Header.name">Content-Type</stringProp>
+                            <stringProp name="Header.value">application/json;charset=UTF-8</stringProp>
+                          </elementProp>
+                          <elementProp name="token" elementType="Header">
+                            <stringProp name="Header.name">token</stringProp>
+                            <stringProp name="Header.value">${out_token}</stringProp>
+                          </elementProp>
+                        </collectionProp>
+                      </HeaderManager>
+                      <hashTree/>
+                      <ModuleController guiclass="ModuleControllerGui" testclass="ModuleController" testname="Module Controller- 修改用户密码" enabled="true">
+                        <collectionProp name="ModuleController.node_path">
+                          <stringProp name="764597751">Test Plan</stringProp>
+                          <stringProp name="764597751">Test Plan</stringProp>
+                          <stringProp name="-1955561607">【当前-通用模块库】Test Fragment</stringProp>
+                          <stringProp name="744875019">---登录相关---</stringProp>
+                          <stringProp name="-1843324794">##修改密码##</stringProp>
+                          <stringProp name="-1625137544">【修改密码】通用：正确入参，检查返回 修改成功</stringProp>
+                        </collectionProp>
+                      </ModuleController>
+                      <hashTree/>
+                    </hashTree>
+                    <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="修改邮箱等基本信息 - Simple Controller" enabled="true"/>
+                    <hashTree>
+                      <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="用新密码登录获取token" enabled="true">
+                        <boolProp name="TransactionController.includeTimers">false</boolProp>
+                        <boolProp name="TransactionController.parent">false</boolProp>
+                      </TransactionController>
+                      <hashTree>
+                        <UserParameters guiclass="UserParametersGui" testclass="UserParameters" testname="用户参数" enabled="true">
+                          <collectionProp name="UserParameters.names">
+                            <stringProp name="-265713450">username</stringProp>
+                            <stringProp name="1216985755">password</stringProp>
+                          </collectionProp>
+                          <collectionProp name="UserParameters.thread_values">
+                            <collectionProp name="1932108448">
+                              <stringProp name="930956704">${loginname}</stringProp>
+                              <stringProp name="-2095111793">${pwdBeyond#11}</stringProp>
+                            </collectionProp>
+                            <collectionProp name="802529">
+                              <stringProp name="0"></stringProp>
+                              <stringProp name="0"></stringProp>
+                            </collectionProp>
+                          </collectionProp>
+                          <boolProp name="UserParameters.per_iteration">true</boolProp>
+                          <stringProp name="TestPlan.comments">${__CSVRead(${__V(file_url)},0)}</stringProp>
+                        </UserParameters>
+                        <hashTree/>
+                        <ModuleController guiclass="ModuleControllerGui" testclass="ModuleController" testname="Module Controller-登录并返回token" enabled="true">
+                          <collectionProp name="ModuleController.node_path">
+                            <stringProp name="764597751">Test Plan</stringProp>
+                            <stringProp name="764597751">Test Plan</stringProp>
+                            <stringProp name="-1955561607">【当前-通用模块库】Test Fragment</stringProp>
+                            <stringProp name="744875019">---登录相关---</stringProp>
+                            <stringProp name="183365976">##登录接口##</stringProp>
+                            <stringProp name="-1859174498">【登录】通用：正确入参，检查接口返回成功-输出{out_token} {out_uid}{out_email}{out_phone}</stringProp>
+                          </collectionProp>
+                        </ModuleController>
+                        <hashTree/>
+                      </hashTree>
+                      <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="修改并检查" enabled="true">
+                        <boolProp name="TransactionController.includeTimers">false</boolProp>
+                        <boolProp name="TransactionController.parent">false</boolProp>
+                      </TransactionController>
+                      <hashTree>
+                        <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+                          <collectionProp name="HeaderManager.headers">
+                            <elementProp name="token" elementType="Header">
+                              <stringProp name="Header.name">token</stringProp>
+                              <stringProp name="Header.value">${out_token}</stringProp>
+                            </elementProp>
+                          </collectionProp>
+                        </HeaderManager>
+                        <hashTree/>
+                        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="修改用户信息" enabled="true">
+                          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+                          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+                            <collectionProp name="Arguments.arguments">
+                              <elementProp name="" elementType="HTTPArgument">
+                                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                                <stringProp name="Argument.value">{&quot;userId&quot;:${userid},&quot;email&quot;:&quot;${email}&quot;,&quot;phone&quot;:&quot;${phone}&quot;}</stringProp>
+                                <stringProp name="Argument.metadata">=</stringProp>
+                              </elementProp>
+                            </collectionProp>
+                          </elementProp>
+                          <stringProp name="HTTPSampler.domain"></stringProp>
+                          <stringProp name="HTTPSampler.port"></stringProp>
+                          <stringProp name="HTTPSampler.protocol"></stringProp>
+                          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+                          <stringProp name="HTTPSampler.path">/paas-web/upmsapi/login/info</stringProp>
+                          <stringProp name="HTTPSampler.method">POST</stringProp>
+                          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+                          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+                          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+                          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+                          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+                          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+                          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+                        </HTTPSamplerProxy>
+                        <hashTree>
+                          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+                            <collectionProp name="Asserion.test_strings">
+                              <stringProp name="-2120983600">&quot;state&quot;:&quot;success&quot;,&quot;code&quot;:200,&quot;data&quot;:null,</stringProp>
+                            </collectionProp>
+                            <stringProp name="Assertion.custom_message"></stringProp>
+                            <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+                            <boolProp name="Assertion.assume_success">false</boolProp>
+                            <intProp name="Assertion.test_type">2</intProp>
+                          </ResponseAssertion>
+                          <hashTree/>
+                        </hashTree>
+                        <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Simple Controller" enabled="true"/>
+                        <hashTree>
+                          <ModuleController guiclass="ModuleControllerGui" testclass="ModuleController" testname="再次登录检查email,phone - Module Controller-" enabled="true">
+                            <collectionProp name="ModuleController.node_path">
+                              <stringProp name="764597751">Test Plan</stringProp>
+                              <stringProp name="764597751">Test Plan</stringProp>
+                              <stringProp name="-1955561607">【当前-通用模块库】Test Fragment</stringProp>
+                              <stringProp name="744875019">---登录相关---</stringProp>
+                              <stringProp name="183365976">##登录接口##</stringProp>
+                              <stringProp name="-1859174498">【登录】通用：正确入参，检查接口返回成功-输出{out_token} {out_uid}{out_email}{out_phone}</stringProp>
+                            </collectionProp>
+                          </ModuleController>
+                          <hashTree/>
+                          <BeanShellAssertion guiclass="BeanShellAssertionGui" testclass="BeanShellAssertion" testname="判断邮箱，电话 值 - BeanShell Assertion" enabled="true">
+                            <stringProp name="BeanShellAssertion.query">if (!vars.get(&quot;out_email&quot;).equals(&quot;${email}&quot;)) {
+	Failure = true;
+	FailureMessage = &quot;src value : &quot; +vars.get(&quot;out_email&quot;)+&quot; dst check: &quot;+&quot;${email}&quot;;
+	return False;
+}
+if (!vars.get(&quot;out_phone&quot;).equals(&quot;${phone}&quot;)) {
+	Failure = true;
+	FailureMessage = vars.get(&quot;out_phone&quot;);
+	return False;
+}
+</stringProp>
+                            <stringProp name="BeanShellAssertion.filename"></stringProp>
+                            <stringProp name="BeanShellAssertion.parameters"></stringProp>
+                            <boolProp name="BeanShellAssertion.resetInterpreter">false</boolProp>
+                          </BeanShellAssertion>
+                          <hashTree/>
+                        </hashTree>
+                      </hashTree>
+                    </hashTree>
+                  </hashTree>
+                </hashTree>
+              </hashTree>
+            </hashTree>
+            <DebugSampler guiclass="TestBeanGUI" testclass="DebugSampler" testname="Debug Sampler" enabled="true">
+              <boolProp name="displayJMeterProperties">false</boolProp>
+              <boolProp name="displayJMeterVariables">true</boolProp>
+              <boolProp name="displaySystemProperties">false</boolProp>
+            </DebugSampler>
+            <hashTree/>
+            <BeanShellSampler guiclass="BeanShellSamplerGui" testclass="BeanShellSampler" testname="附加：自增用例编号（No+1）" enabled="true">
+              <stringProp name="BeanShellSampler.query">str = vars.get(&quot;No&quot;);
+str1 = Integer.parseInt(str) + 1;
+vars.put(&quot;No&quot;,str1.toString());
+
+
+    </stringProp>
+              <stringProp name="BeanShellSampler.filename"></stringProp>
+              <stringProp name="BeanShellSampler.parameters"></stringProp>
+              <boolProp name="BeanShellSampler.resetInterpreter">false</boolProp>
+            </BeanShellSampler>
+            <hashTree/>
+          </hashTree>
+        </hashTree>
+      </hashTree>
+      <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="true">
+        <boolProp name="ResultCollector.error_logging">false</boolProp>
+        <objProp>
+          <name>saveConfig</name>
+          <value class="SampleSaveConfiguration">
+            <time>true</time>
+            <latency>true</latency>
+            <timestamp>true</timestamp>
+            <success>true</success>
+            <label>true</label>
+            <code>true</code>
+            <message>true</message>
+            <threadName>true</threadName>
+            <dataType>true</dataType>
+            <encoding>false</encoding>
+            <assertions>true</assertions>
+            <subresults>true</subresults>
+            <responseData>false</responseData>
+            <samplerData>false</samplerData>
+            <xml>false</xml>
+            <fieldNames>true</fieldNames>
+            <responseHeaders>false</responseHeaders>
+            <requestHeaders>false</requestHeaders>
+            <responseDataOnError>false</responseDataOnError>
+            <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+            <assertionsResultsToSave>0</assertionsResultsToSave>
+            <bytes>true</bytes>
+            <sentBytes>true</sentBytes>
+            <url>true</url>
+            <threadCounts>true</threadCounts>
+            <idleTime>true</idleTime>
+            <connectTime>true</connectTime>
+          </value>
+        </objProp>
+        <stringProp name="filename"></stringProp>
+      </ResultCollector>
+      <hashTree/>
+      <ResultCollector guiclass="SummaryReport" testclass="ResultCollector" testname="Summary Report" enabled="true">
+        <boolProp name="ResultCollector.error_logging">false</boolProp>
+        <objProp>
+          <name>saveConfig</name>
+          <value class="SampleSaveConfiguration">
+            <time>true</time>
+            <latency>true</latency>
+            <timestamp>true</timestamp>
+            <success>true</success>
+            <label>true</label>
+            <code>true</code>
+            <message>true</message>
+            <threadName>true</threadName>
+            <dataType>true</dataType>
+            <encoding>false</encoding>
+            <assertions>true</assertions>
+            <subresults>true</subresults>
+            <responseData>false</responseData>
+            <samplerData>false</samplerData>
+            <xml>false</xml>
+            <fieldNames>true</fieldNames>
+            <responseHeaders>false</responseHeaders>
+            <requestHeaders>false</requestHeaders>
+            <responseDataOnError>false</responseDataOnError>
+            <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+            <assertionsResultsToSave>0</assertionsResultsToSave>
+            <bytes>true</bytes>
+            <sentBytes>true</sentBytes>
+            <url>true</url>
+            <threadCounts>true</threadCounts>
+            <idleTime>true</idleTime>
+            <connectTime>true</connectTime>
+          </value>
+        </objProp>
+        <stringProp name="filename"></stringProp>
+      </ResultCollector>
+      <hashTree/>
+      <ResultCollector guiclass="StatVisualizer" testclass="ResultCollector" testname="Aggregate Report" enabled="true">
+        <boolProp name="ResultCollector.error_logging">false</boolProp>
+        <objProp>
+          <name>saveConfig</name>
+          <value class="SampleSaveConfiguration">
+            <time>true</time>
+            <latency>true</latency>
+            <timestamp>true</timestamp>
+            <success>true</success>
+            <label>true</label>
+            <code>true</code>
+            <message>true</message>
+            <threadName>true</threadName>
+            <dataType>true</dataType>
+            <encoding>false</encoding>
+            <assertions>true</assertions>
+            <subresults>true</subresults>
+            <responseData>false</responseData>
+            <samplerData>false</samplerData>
+            <xml>false</xml>
+            <fieldNames>true</fieldNames>
+            <responseHeaders>false</responseHeaders>
+            <requestHeaders>false</requestHeaders>
+            <responseDataOnError>false</responseDataOnError>
+            <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+            <assertionsResultsToSave>0</assertionsResultsToSave>
+            <bytes>true</bytes>
+            <sentBytes>true</sentBytes>
+            <url>true</url>
+            <threadCounts>true</threadCounts>
+            <idleTime>true</idleTime>
+            <connectTime>true</connectTime>
+          </value>
+        </objProp>
+        <stringProp name="filename"></stringProp>
+      </ResultCollector>
+      <hashTree/>
+      <TestFragmentController guiclass="TestFragmentControllerGui" testclass="TestFragmentController" testname="&gt;&gt;&gt;&gt;&gt;&gt;工单立项&lt;&lt;&lt;&lt;&lt;&lt;&lt;" enabled="false"/>
+      <hashTree/>
+    </hashTree>
+  </hashTree>
+</jmeterTestPlan>
